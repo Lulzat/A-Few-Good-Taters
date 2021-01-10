@@ -191,7 +191,13 @@
 <script>
 import 'animate.css';
 
-export default {}
+export default {
+  head() {
+    return {
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    };
+  },
+}
 </script>
 
 <style scoped>
