@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Berkshire+Swash&family=Dancing+Script:wght@700&family=Fondamento:ital@0;1&family=Inconsolata:wght@900&family=Lateef&family=Major+Mono+Display&family=Marck+Script&family=Merienda:wght@400;700&family=Montserrat:wght@200;400&family=Niconne&family=Nova+Mono&family=Oswald:wght@300;700&family=Xanh+Mono:ital@0;1&family=Yanone+Kaffeesatz:wght@400;700&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&family=Josefin+Sans:wght@300;400;700&family=Pacifico&family=Roboto:wght@100;300;400;500;700;900&family=Satisfy&family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Grand+Hotel&family=La+Belle+Aurore&family=Marck+Script&family=Merienda:wght@400;700&family=Neucha&family=Norican&family=Redressed&display=swap');
+
+/**
+.container {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .wanna-be-hero {
+    background-image: url("/a-few-good-uns.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position-y: top;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top:40px;
+  }
+  
+  .title {
+    font-family:
+      'Montserrat', sans-serif;
+    display: block;
+    font-weight: 400;
+    font-size: 4em;
+    color: #35495e;
+    letter-spacing: 1px;
+  }
+  
+  .small-title {
+    font-family:
+      'Montserrat', sans-serif;
+    display: inline-block;
+    font-weight: 200 !important;
+    font-size: .5em;
+    color: #35495e;
+    letter-spacing: 1px;
+  }
+  
+  .taters-text {
+    font-family: 'Fondamento', cursive;
+    display: block;
+    font-weight: 300;
+    font-size: 8em;
+    color: #35495e;
+    letter-spacing: 15px;
+    margin-top: -75px;
+    text-shadow: 0px 10px 9px rgba(0, 0, 0, 0.5);
+  }
+  
+  .subtitle {
+    font-weight: 300;
+    font-size: 42px;
+    color: #526488;
+    word-spacing: 5px;
+    padding-bottom: 15px;
+  }
+  
+  .links {
+    padding-top: 15px;
+  }**/
