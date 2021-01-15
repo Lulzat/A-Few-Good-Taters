@@ -262,7 +262,7 @@ svg:hover g {
 }
 
 .tatersLogoFillOne {
-  fill: rgb(0, 0, 0)
+  fill: rgb(0, 53, 74)
 }
 
 .tatersLogoFillTwo {
@@ -270,7 +270,7 @@ svg:hover g {
 }
 
 .background-title {
-        background-color: rgb(37, 149, 97);
+        background-color: rgb(62,135,98);
     }
 
 </style>

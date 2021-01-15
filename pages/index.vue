@@ -3,11 +3,7 @@
     <div class="">
       <section class="outer-container flex md:items-center pt-16">
         <div class="flex flex-col w-full mb-12 lg:text-center">
-          <h1 class="color-title text-center text-6xl mb-6 font-semibold md:tracking-superwide font-title animate__animated animate__pulse">
-            A Few Good
-            <br class="">
-            Taters.
-          </h1>
+          <Logo />
         </div>
       </section>
       <!--Lead Card-->

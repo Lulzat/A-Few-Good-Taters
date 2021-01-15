@@ -6,7 +6,7 @@
       </a>
       <nav class="hidden md:flex flex-wrap items-center justify-center text-base md:ml-auto justify-center">
         <a href="#Projects" class="mr-5 text-sm font-semibold text-gray-600 hover:text-green-700">Projects</a>
-        <a href="#" class="mr-5 text-sm font-semibold text-gray-600 hover:text-green-700">Contact</a>
+        <a href="/blog" class="mr-5 text-sm font-semibold text-gray-600 hover:text-green-700">Blog</a>
         <a href="#" class="mr-5 text-sm font-semibold text-gray-600 hover:text-green-700">Services</a>
         <a href="#" class="mr-5 text-sm font-semibold text-gray-600 hover:text-green-700">Now</a>
       </nav>
@@ -34,7 +34,7 @@
       class="transform h-screen top-0 left-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30"
       :class="isOpen ? 'translate-x-0' : '-translate-x-full'">
       <span @click="isOpen = false" class="flex w-full items-center p-4 border-b">
-        <img src="/logos/fox-hub.png" alt="Logo" class="h-auto w-32 mx-auto" />
+        <Taters />
       </span>
       <span @click="isOpen = false" class="flex items-center p-4 hover:bg-indigo-500 hover:text-white "><span
           class="mr-2">
@@ -46,7 +46,7 @@
           </svg>
         </span>
         <span>Home</span></span>
-      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-indigo-500 hover:text-white "><span
+      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-blue hover:text-white "><span
           class="mr-2">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" class="w-6 h-6">
@@ -56,7 +56,7 @@
           </svg>
         </span>
         <span>Trending Globally</span></span>
-      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-indigo-500 hover:text-white "><span
+      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-blue hover:text-white "><span
           class="mr-2">
           <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor"
             viewBox="0 0 24 24" class="w-6 h-6">
@@ -64,7 +64,7 @@
           </svg>
         </span>
         <span>Wishlist</span></span>
-      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-indigo-500 hover:text-white "><span
+      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-blue hover:text-white "><span
           class="mr-2">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" class="w-6 h-6">
@@ -72,7 +72,7 @@
           </svg>
         </span>
         <span>About</span></span>
-      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-indigo-500 hover:text-white "><span
+      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-blue hover:text-white "><span
           class="mr-2">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" class="w-6 h-6">
@@ -83,7 +83,7 @@
         </span>
         <span>Contact</span></span>
       <div class="fixed bottom-0 w-full">
-        <button class="flex items-center p-4 text-white bg-blue-500 hover:bg-blue-600 w-full">
+        <button class="flex items-center p-4 text-white bg-tater-green hover:bg-tater-blue w-full">
           <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor"
             viewBox="0 0 24 24" class="h-6 w-6 mr-2">
             <path
@@ -92,15 +92,6 @@
           </svg>
           <span>Share</span>
         </button>
-        <a rel="noopener" class="flex items-center p-4 bg-orange-700 text-white "
-          href="https://www.buymeacoffee.com/fayazahmed" target="_blank">
-          <img class="mr-2 h-8 w-auto" src="/sidebar/bmc.svg" alt="Buy Me Coffee" />
-          <p>
-            <span class="font-bold">Buy me a Coffee</span>
-            <br />
-            <span class="text-sm text-white">Help me keep this site alive</span>
-          </p>
-        </a>
       </div>
     </aside>
   </header>

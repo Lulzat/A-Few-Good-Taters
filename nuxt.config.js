@@ -42,6 +42,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    // https://go.nuxtjs.dev/content
+    '@nuxt/content',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -49,6 +51,19 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+  // Generate Configuration
+  generate: {
+    routes: function() {
+      const fs = require('fs');
+      const path = require('path');
+      return fs.readdirSync('./content/blog').map(file => {
+        return {
+          route: `/blog/${path.parse(file).name}`, // Return the slug
+          payload: require(`./content/blog/${file}`),
+        };
+      });
+    },
   },
   //linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)),
   tailwindcss: {
@@ -60,6 +75,10 @@ export default {
            'fresh-taters': "url('/look-at-them-fresh-taters.jpg')",
            'falling-taters': "url('/falling-taters.jpg')",
           }),
+          colors: {
+            'tater-green': 'rgb(62,135,98)',
+            'tater-blue': 'rgb(0,53,74)'
+          } 
         },
         fontFamily: {
           'title': ["Redressed"]
