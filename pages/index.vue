@@ -198,15 +198,16 @@ export default {
 
 <style scoped>
     .outer-container {
-        background-image: url("/falling-taters.jpg");
+        background-image: url("/tater-farming.jpg");
         background-size: cover;
-        background-position: top;
+        background-position: center;
         background-repeat: no-repeat;
         height: 100vh;
+        padding:20px;
     }
 
     .color-title {
-        color: rgb(37, 149, 97);
+        color: rgb(130, 46, 46);
         text-shadow: 4px 3px 2px rgba(11, 34, 8, 0.7);
         font-size:7em;
     }

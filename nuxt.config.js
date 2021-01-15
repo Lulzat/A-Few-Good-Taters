@@ -73,10 +73,10 @@ export default {
            'field-church': "url('/planted-in-good-soil.jpg')",
            'fresh-taters': "url('/look-at-them-fresh-taters.jpg')",
            'falling-taters': "url('/falling-taters.jpg')",
+           'tater-farming': "url('/tater-farming.jpg')",
           }),
           colors: {
-            'tater-green': 'rgb(62,135,98)',
-            'tater-blue': 'rgb(0,53,74)'
+            'tater-red': 'rgb(53,21,21)'
           } 
         },
         fontFamily: {
