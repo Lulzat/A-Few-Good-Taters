@@ -273,4 +273,7 @@ svg:hover g {
         background-color: rgb(130,46,46);
     }
 
+.tan {
+  color: rgb(173,171,127)
+}
 </style>
