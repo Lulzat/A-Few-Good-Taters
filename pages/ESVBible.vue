@@ -1,7 +1,8 @@
 <template>
     <div>
         <div v-if="this.data"> 
-            <div class="content" v-html="this.data.passages[0]"/>         
+            <div class="content" v-html="this.data.passages[0]">
+            </div>         
         </div>
         <div v-else>
             <h2>No Random Verse For You</h2>
