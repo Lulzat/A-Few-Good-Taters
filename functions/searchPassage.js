@@ -13,7 +13,9 @@ exports.handler = function (event, context, callback) {
             params: {
                 'include-footnotes': false,
                 'include-footnote-body': false,
-                'include-short-copyright': false
+                'include-short-copyright': false,
+                'wrapping-div': true,
+                'inline-styles': true
             }
         })
         .then(
