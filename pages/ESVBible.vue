@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-if="this.data"> 
-            <div class="content" v-html="this.data.passages[0]">
+            <div class="content" v-html="this.randomVerseContent">
             </div>         
         </div>
         <div v-else>
@@ -799,6 +799,7 @@ data() {
         'Romans 1:13'
     ],
     randomVerse: '',
+    randomVerseContent: '',
     data: [],
     }
 },
@@ -813,6 +814,7 @@ methods: {
         url).then(response => {
         console.log(response)
         this.data = response.data
+        this.randomVerseContent = response.data.passages[0]
     }).catch(error => {
         this.errorMsg = 'No Results Found'
         this.data = []
