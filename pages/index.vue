@@ -6,7 +6,7 @@
           <Logo />
         </div>
       </section>
-      <!--Lead Card-->
+      <!--Lead Card
       <section class="text-gray-700 body-font pt-16">
         <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 lg:py-24 md:flex-row">
           <div class="md:hidden flex justify-center w-5/6 lg:max-w-lg lg:w-full md:w-1/2 md:p-16">
@@ -55,7 +55,7 @@
           </div>
         </div>
       </section>
-      <!--/Lead Card-->
+      /Lead Card-->
 
       <section id="Projects" class="text-gray-700 body-font">
         <div class="container px-8 mx-auto lg:px-4">
