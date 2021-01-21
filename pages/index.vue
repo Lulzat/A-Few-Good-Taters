@@ -86,6 +86,26 @@
                 </a>
               </div>
             </div>
+            
+            <div class="px-8 py-6 lg:w-1/3 md:w-full">
+              <div class="p-6 rounded-md bg-blueGray-200">
+                <img class="object-cover object-center w-full h-40 mb-6 rounded"
+                  src="/Logos/ESV/esv-logo.png" alt="ESV Image">
+                <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">DailyVerse.vue
+                </h2>
+                <p class="mb-4 text-base leading-relaxed">A daily bible verse utilizing the ESV Bible API</p>
+                <DailyVerse />
+                <a href="/ESVBible"
+                  class="inline-flex items-center font-semibold text-blue-700 md:mb-2 lg:mb-0 hover:text-blue-400 ">
+                  Check it out!
+                  <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                    height="20" fill="currentColor">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
 
           </div>
         </div>
@@ -144,14 +164,7 @@
 
           </a>
           <div class="flex flex-wrap items-center justify-center mx-auto text-base md:ml-auto md:mr-auto">
-            <a href="#Projects" class="justify-center mr-5 text-sm text-center text-gray-600 hover:text-gray-800">
-              Projects</a>
-            <a href="#" class="justify-center mr-5 text-sm text-center text-gray-600 hover:text-gray-800">
-              Contact</a>
-            <a href="#" class="justify-center mr-5 text-sm text-center text-gray-600 hover:text-gray-800">
-              Services</a>
-            <a href="#" class="justify-center mr-5 text-sm text-center text-gray-600 hover:text-gray-800">
-              About</a>
+            <p>Scripture quotations are from the ESV® Bible (The Holy Bible, English Standard Version®), copyright © 2001 by Crossway, a publishing ministry of Good News Publishers. Used by permission. All rights reserved. You may not copy or download more than 500 consecutive verses of the ESV Bible or more than one half of any book of the ESV Bible.</p>
           </div>
           <div class="inline-flex items-center justify-center md:justify-start ">
             <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
