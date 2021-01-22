@@ -76,7 +76,8 @@ export default {
            'tater-farming': "url('/tater-farming.jpg')",
           }),
           colors: {
-            'tater-red': 'rgb(53,21,21)'
+            'tater-red': 'rgb(130,46,46)',
+            'tater-tan': 'rgb(242, 231, 167)'
           } 
         },
         fontFamily: {

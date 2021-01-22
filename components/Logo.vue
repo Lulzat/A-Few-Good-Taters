@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-center">
-    <img src="/Logos/GoodTaters/New_Taters.png" class="w-96"/>
+    <img src="/Logos/GoodTaters/New_Taters_12.png" class="w-96"/>
   </div>
 </template>
 

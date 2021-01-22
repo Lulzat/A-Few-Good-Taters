@@ -57,7 +57,7 @@
       </section>
       /Lead Card-->
 
-      <section id="Projects" class="text-gray-700 body-font">
+      <section id="Projects" class="text-gray-700 body-font top-shadow">
         <div class="container px-8 mx-auto lg:px-4">
           <div class="flex flex-wrap justify-center text-left">
             <div
@@ -215,6 +215,7 @@ export default {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         height: 100vh;
         padding:20px;
     }
@@ -225,8 +226,8 @@ export default {
         font-size:7em;
     }
 
-    .color-subtitle {
-      color: rgb(37, 149, 97);
+    .top-shadow {
+      box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.25);
     }
 
 </style>

@@ -1,10 +1,10 @@
 <template>
-  <svg class="h-24 w-24 p-3 rounded-full background-title" :class="taterClass" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  <svg class="h-24 w-24 p-3 background-title" :class="taterClass" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:svg="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="1.1"
     id="Layer_1" width="32" height="36" viewBox="0 0 370.535 347.657" overflow="visible"
     enable-background="new 0 0 370.535 347.657" xml:space="preserve">
-    <g class="is-rounded">
+    <g>
       <path fill-rule="evenodd" clip-rule="evenodd"  class="tatersLogoFillOne"
         d="M236.07,24.003c0.861,7.114-11.128,9.163-14.894,4.583   C218.312,23.18,232.4,16.393,236.07,24.003z" />
 
@@ -262,15 +262,15 @@ svg:hover g {
 }
 
 .tatersLogoFillOne {
-  fill: rgb(0, 0, 0)
+  fill: rgb(130,46,46)
 }
 
 .tatersLogoFillTwo {
-  fill: rgb(255, 255, 255);
+  fill: rgb(242, 231, 167);
 }
 
 .background-title {
-        background-color: rgb(130,46,46);
+        border-radius: 10px;
     }
 
 .tan {
