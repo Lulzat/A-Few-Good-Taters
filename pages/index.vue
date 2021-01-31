@@ -1,7 +1,7 @@
 <template>
   <div class=" w-full bg-white-200 font-sans leading-normal">
     <div class="">
-      <section class="flex h-screen w-screen justify-center md:items-center pt-16">
+      <section class="flex h-screen w-full justify-center md:items-center pt-16">
         <div class="flex flex-col rounded items-center text-center justify-center w-60 lg:w-80 h-104 bg-top lg:bg-bottom bg-fixed bg-contain hero-wrapper">
           <div class="taters-wrapper border-t-4 border-b-4 w-full lg:w-2/4 absolute">
             <h1 class="taters-knockout font-taters text-6xl lg:text-10xl text-white tracking-super-wide">Taters</h1>  
