@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="main-body flex">
     <RadBar />
     <Nuxt />
   </div>
@@ -59,5 +59,9 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.main-body {
+  background-color: rgb(255, 245, 237);
 }
 </style>

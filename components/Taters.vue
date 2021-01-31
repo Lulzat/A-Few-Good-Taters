@@ -1,5 +1,5 @@
 <template>
-  <svg class="h-24 w-24 p-3 background-title" :class="taterClass" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  <svg class="po-tay-toes h-24 w-24 p-3 background-title" :class="taterClass" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:svg="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="1.1"
     id="Layer_1" width="32" height="36" viewBox="0 0 370.535 347.657" overflow="visible"
@@ -241,16 +241,16 @@ export default {
 </script>
 
 <style>
-svg {
+/*.po-tay-toes {
   filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
-}
+}*/
 
-svg:hover {
+.po-tay-toes:hover {
   background:url("/po-tay-toes.gif");
   background-position: center;
 }
 
-svg:hover g {
+.po-tay-toes:hover g {
   display: none;
 }
 
@@ -266,7 +266,7 @@ svg:hover g {
 }
 
 .tatersLogoFillTwo {
-  fill: rgb(242, 231, 167);
+  fill: rgba(0, 0, 0, 0);
 }
 
 .background-title {

@@ -78,10 +78,37 @@ export default {
           colors: {
             'tater-red': 'rgb(130,46,46)',
             'tater-tan': 'rgb(242, 231, 167)'
-          } 
+          },
+          height: {
+            'screen-1/3': '33vh',
+            'screen-2/3': '66vh',
+            'screen-1/5': '50vh',
+            'screen-1/4': '25vh',
+            'screen-3/4': '75vh',
+            '80': '20rem',
+            '104': '26rem'
+          },
+          width: {
+            'screen-1/3': '33vw',
+            'screen-2/3': '66vw',
+            'screen-1/5': '50vw',
+            'screen-1/4': '25vw',
+            'screen-3/4': '75vw',
+            '80': '20rem',
+            '60': '15rem'
+           },
+          fontSize: {
+            '6xl': '3.5rem',
+            '10xl': '5.5rem'
+          },
+          letterSpacing: {
+            'super-wide': '2.5rem'
+          }
+           
         },
         fontFamily: {
-          'title': ["Redressed"]
+          'title': ["Redressed"],
+          'taters': ["Fondamento, cursive"]
           },
         letterSpacing: {
           superwide: '.5em'

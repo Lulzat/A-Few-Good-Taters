@@ -1,23 +1,23 @@
 
 <template>
-  <header class="navbar fixed z-50 w-full flex bg-transparent body-font justify-end md:justify-between mdjustify-center p-1" :class="{ 'navbar--hidden': !showNavbar }">
-      <a href="/" class="hidden md:flex items-center justify-center w-40 title-font mt-3 md:mb-0">
-        <Taters />
+  <header :class="scrolled ? 'scroll' : ''" class="navbar fixed p-3 z-50 w-full flex bg-transparent body-font justify-between md:justify-between mdjustify-center p-1">
+      <a href="/" class="flex items-center justify-center">
+        <h1 class="font-taters text-2xl hover:text-tater-red">A Few Good Taters</h1>
       </a>
       <nav class="hidden md:flex flex-wrap items-center justify-center text-base md:ml-auto justify-center">
-        <a href="#Projects" class="mr-5 text-sm font-semibold text-tater-tan hover:text-tater-red">Projects</a>
-        <a href="/blog" class="mr-5 text-sm font-semibold text-tater-tan hover:text-tater-red">Blog</a>
-        <a href="#" class="mr-5 text-sm font-semibold text-tater-tan hover:text-tater-red">Services</a>
-        <a href="#" class="mr-5 text-sm font-semibold text-tater-tan hover:text-tater-red">Now</a>
+        <a href="#Projects" class="mr-5 text-sm font-semibold text-black hover:text-tater-red hover:border-b-2 hover:border-tater-red">Projects</a>
+        <a href="/blog" class="mr-5 text-sm font-semibold text-black hover:text-tater-red hover:border-b-2 hover:border-tater-red">Blog</a>
+        <a href="#" class="mr-5 text-sm font-semibold text-black hover:text-tater-red hover:border-b-2 hover:border-tater-red">Services</a>
+        <a href="#" class="mr-5 text-sm font-semibold text-black hover:text-tater-red hover:border-b-2 hover:border-tater-red">Now</a>
       </nav>
       <div id="burger" @click.prevent="drawer"
         class="justify-end items-center py-1 font-semibold transition duration-500 ease-in-out transform lg:inline-flex lg:mt-px"
         aria-label="Open Menu">
         <slot>
           <button type="button" class="burger-button" title="Menu">
-            <span class="burger-bar burger-bar--1 bg-tater-tan hover:bg-tater-red"></span>
-            <span class="burger-bar burger-bar--2 bg-tater-tan hover:bg-tater-red"></span>
-            <span class="burger-bar burger-bar--3 bg-tater-tan hover:bg-tater-red"></span>
+            <span class="burger-bar burger-bar--1 bg-black hover:bg-tater-red"></span>
+            <span class="burger-bar burger-bar--2 bg-black hover:bg-tater-red"></span>
+            <span class="burger-bar burger-bar--3 bg-black hover:bg-tater-red"></span>
           </button>
         </slot>
     </div>
@@ -31,12 +31,12 @@
       </div>
     </transition>
     <aside
-      class="transform h-screen top-0 left-0 w-64 bg-tater-tan fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30"
+      class="transform h-screen top-0 left-0 w-64 bg-black fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30"
       :class="isOpen ? 'translate-x-0' : '-translate-x-full'">
       <span @click="isOpen = false" class="flex w-full items-center p-4 border-b">
         <Taters />
       </span>
-      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-indigo-500 hover:text-tater-tan "><span
+      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-indigo-500 hover:text-black "><span
           class="mr-2">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" class="w-6 h-6">
@@ -46,7 +46,7 @@
           </svg>
         </span>
         <span>Home</span></span>
-      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-tater-tan "><span
+      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-black "><span
           class="mr-2">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" class="w-6 h-6">
@@ -56,7 +56,7 @@
           </svg>
         </span>
         <span>Trending Globally</span></span>
-      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-tater-tan "><span
+      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-black "><span
           class="mr-2">
           <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor"
             viewBox="0 0 24 24" class="w-6 h-6">
@@ -64,7 +64,7 @@
           </svg>
         </span>
         <span>Wishlist</span></span>
-      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-tater-tan "><span
+      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-black "><span
           class="mr-2">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" class="w-6 h-6">
@@ -72,7 +72,7 @@
           </svg>
         </span>
         <span>About</span></span>
-      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-tater-tan "><span
+      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-black "><span
           class="mr-2">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" class="w-6 h-6">
@@ -83,7 +83,7 @@
         </span>
         <span>Contact</span></span>
       <div class="fixed bottom-0 w-full">
-        <button class="flex items-center p-4 text-tater-tan bg-tater-green hover:bg-tater-red w-full">
+        <button class="flex items-center p-4 text-black bg-tater-green hover:bg-tater-red w-full">
           <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor"
             viewBox="0 0 24 24" class="h-6 w-6 mr-2">
             <path
@@ -102,25 +102,15 @@ export default {
   data() {
     return {
       isOpen: false,
-      showNavbar: true,
-      lastScrollPosition: 0
+      scrolled: false
     };
   },
   methods: {
+    handleScroll() {
+      this.scrolled = window.scrollY > 0;
+    },
     drawer() {
       this.isOpen = !this.isOpen;
-    },
-    onScroll() {
-      const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
-      if (currentScrollPosition < 0) {
-        return
-      } // Stop executing this function if the difference between
-      // current scroll position and last scroll position is less than some offset
-      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 100) {
-        return
-      }
-      this.showNavbar = currentScrollPosition < this.lastScrollPosition
-      this.lastScrollPosition = currentScrollPosition
     }
   },
   watch: {
@@ -134,19 +124,19 @@ export default {
       }
     }
   },
-  mounted() {
-    document.addEventListener("keydown", e => {
-        if (e.keyCode == 27 && this.isOpen) this.isOpen = false;
-      },
-      window.addEventListener('scroll', this.onScroll)
-    );
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
   },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.onScroll)
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 };
 </script>
 <style scoped>
+
+    header {
+      background-color: rgb(255, 245, 237);
+    }
 
     .navbar {
       transform: translate3d(0, 0, 0);
@@ -230,5 +220,9 @@ export default {
     #burger.active .burger-bar--3 {
       transform: rotate(-45deg)
     }
+
+    .scroll {
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  }
 
 </style>
