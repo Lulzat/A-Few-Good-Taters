@@ -1,23 +1,23 @@
 
 <template>
-  <header :class="scrolled ? 'scroll' : ''" class="navbar fixed p-3 z-50 w-full flex bg-transparent body-font justify-between md:justify-between mdjustify-center p-1">
+  <header :class="scrolled ? 'scroll' : ''" class="navbar fixed p-3 z-50 w-full flex bg-transparent body-font justify-between md:justify-between p-1">
       <a href="/" class="flex items-center justify-center">
-        <h1 class="font-taters text-2xl hover:text-tater-red">A Few Good Taters</h1>
+        <h1 class="font-archia text-3xl text-tater-red hover:text-white hover:bg-tater-red-200 logo-text">A Few Good Taters</h1>
       </a>
       <nav class="hidden md:flex flex-wrap items-center justify-center text-base md:ml-auto justify-center">
-        <a href="#Projects" class="mr-5 text-sm font-semibold text-black hover:text-tater-red hover:border-b-2 hover:border-tater-red">Projects</a>
-        <a href="/blog" class="mr-5 text-sm font-semibold text-black hover:text-tater-red hover:border-b-2 hover:border-tater-red">Blog</a>
-        <a href="#" class="mr-5 text-sm font-semibold text-black hover:text-tater-red hover:border-b-2 hover:border-tater-red">Services</a>
-        <a href="#" class="mr-5 text-sm font-semibold text-black hover:text-tater-red hover:border-b-2 hover:border-tater-red">Now</a>
+        <a href="#Projects" class="mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Projects</a>
+        <a href="/blog" class="mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Blog</a>
+        <a href="#" class="mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Services</a>
+        <a href="#" class="mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Now</a>
       </nav>
       <div id="burger" @click.prevent="drawer"
         class="justify-end items-center py-1 font-semibold transition duration-500 ease-in-out transform lg:inline-flex lg:mt-px"
         aria-label="Open Menu">
         <slot>
           <button type="button" class="burger-button" title="Menu">
-            <span class="burger-bar burger-bar--1 bg-black hover:bg-tater-red"></span>
-            <span class="burger-bar burger-bar--2 bg-black hover:bg-tater-red"></span>
-            <span class="burger-bar burger-bar--3 bg-black hover:bg-tater-red"></span>
+            <span class="burger-bar burger-bar--1 bg-tater-red hover:bg-tater-red-200"></span>
+            <span class="burger-bar burger-bar--2 bg-tater-red hover:bg-tater-red-200"></span>
+            <span class="burger-bar burger-bar--3 bg-tater-red hover:bg-tater-red-200"></span>
           </button>
         </slot>
     </div>
@@ -36,7 +36,7 @@
       <span @click="isOpen = false" class="flex w-full items-center p-4 border-b">
         <Taters />
       </span>
-      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-indigo-500 hover:text-black "><span
+      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-indigo-500 hover:text-tater-red-200 "><span
           class="mr-2">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" class="w-6 h-6">
@@ -46,7 +46,7 @@
           </svg>
         </span>
         <span>Home</span></span>
-      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-black "><span
+      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-tater-red-200 "><span
           class="mr-2">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" class="w-6 h-6">
@@ -56,7 +56,7 @@
           </svg>
         </span>
         <span>Trending Globally</span></span>
-      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-black "><span
+      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-tater-red-200 "><span
           class="mr-2">
           <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor"
             viewBox="0 0 24 24" class="w-6 h-6">
@@ -64,7 +64,7 @@
           </svg>
         </span>
         <span>Wishlist</span></span>
-      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-black "><span
+      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-tater-red-200 "><span
           class="mr-2">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" class="w-6 h-6">
@@ -72,7 +72,7 @@
           </svg>
         </span>
         <span>About</span></span>
-      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-black "><span
+      <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-red hover:text-tater-red-200 "><span
           class="mr-2">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" class="w-6 h-6">
@@ -83,7 +83,7 @@
         </span>
         <span>Contact</span></span>
       <div class="fixed bottom-0 w-full">
-        <button class="flex items-center p-4 text-black bg-tater-green hover:bg-tater-red w-full">
+        <button class="flex items-center p-4 text-tater-red-200 bg-tater-green hover:bg-tater-red w-full">
           <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor"
             viewBox="0 0 24 24" class="h-6 w-6 mr-2">
             <path
@@ -135,7 +135,7 @@ export default {
 <style scoped>
 
     header {
-      background-color: rgb(255, 245, 237);
+      background-color: rgb(255, 255, 255);
     }
 
     .navbar {
@@ -190,9 +190,6 @@ export default {
       transform: scaleX(.8);
     }
 
-    .burger-button:hover .burger-bar {
-      background-color: rgb(37, 149, 97);
-    }
     .burger-button:hover .burger-bar--2 {
       transform: scaleX(1);
     }
@@ -223,6 +220,18 @@ export default {
 
     .scroll {
     box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  }
+
+  .logo-text {
+    padding: 0.25rem;
+    border-radius: 2px;
+  }
+
+  .nav-links {
+    padding: .25rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
   }
 
 </style>

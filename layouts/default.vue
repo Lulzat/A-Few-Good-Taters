@@ -62,6 +62,6 @@ html {
 }
 
 .main-body {
-  background-color: rgb(255, 245, 237);
+  background-color: rgb(255, 255, 255);
 }
 </style>

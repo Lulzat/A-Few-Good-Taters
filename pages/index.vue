@@ -2,15 +2,16 @@
   <div class=" w-full bg-white-200 font-sans leading-normal">
     <div class="">
       <section class="flex h-screen w-full justify-center md:items-center pt-16">
-        <div class="flex flex-col rounded items-center text-center justify-center w-60 lg:w-80 h-104 bg-top lg:bg-bottom bg-fixed bg-contain hero-wrapper">
-          <div class="taters-wrapper border-t-4 border-b-4 w-full lg:w-2/4 absolute">
-            <h1 class="taters-knockout font-taters text-6xl lg:text-10xl text-white tracking-super-wide">Taters</h1>  
+        <div class="flex flex-col rounded items-center text-center justify-center w-60 lg:w-2/4 h-104 bg-top lg:bg-bottom bg-fixed bg-contain lg:bg-cover lg:bg-center hero-wrapper">
+          <div class="taters-wrapper border-t-4 border-b-4 w-full absolute">
+            <h1 class="taters-knockout font-taters text-6xl lg:text-10xl text-white tracking-super-wide">What We Need<br/>Right Now</h1>  
           </div>
         </div>
       </section>
+      <div class="skew-cc"></div>
 
 
-      <section id="Projects" class="w-full text-gray-700 body-font top-shadow">
+      <section id="Projects" class="w-full text-gray-700 body-font">
         <div class="container px-8 mx-auto lg:px-4">
           <div class="flex flex-wrap justify-center text-left">
             <div class="flex flex-col items-center w-full pt-8 flex-grow text-center pb-1 border-b-2">
@@ -165,11 +166,33 @@ export default {
     }
 
     .hero-wrapper {
-      background-image: linear-gradient(0deg, rgba(106, 106, 106, 0.3), rgba(0, 0, 0, 0.3)),url('/Tater-Farming.jpg');
+      background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),url('/Tater-Farming.jpg');
+      box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.30);
     }
 
     .taters-wrapper {
-      mix-blend-mode: difference;
+      /*mix-blend-mode: hard-light;*/
+      white-space: nowrap;
+      border-color: rgb(104, 66, 66);
+    }
+
+    .taters-knockout {
+      color: rgb(104, 66, 66);
+    }
+    
+    /*------------------*/
+    /*  SKEW CLOCKWISE  */
+    /*------------------*/
+    .skew-cc{
+      width:100%;
+      height:100px;
+      position:absolute;
+      left:0px;
+      background: linear-gradient(to right bottom, #fff 49%, #7b3b3b 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+    }
+
+    #projects {
+      background-color: #7b3b3b;
     }
   
 </style>

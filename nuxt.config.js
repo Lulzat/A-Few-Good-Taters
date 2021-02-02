@@ -76,7 +76,8 @@ export default {
            'tater-farming': "url('/tater-farming.jpg')",
           }),
           colors: {
-            'tater-red': 'rgb(130,46,46)',
+            'tater-red': 'rgb(104, 66, 66)',
+            'tater-red-200': 'rgb(179, 110, 110)',
             'tater-tan': 'rgb(242, 231, 167)'
           },
           height: {
@@ -95,7 +96,8 @@ export default {
             'screen-1/4': '25vw',
             'screen-3/4': '75vw',
             '80': '20rem',
-            '60': '15rem'
+            '60': '15rem',
+            '150': '150%'
            },
           fontSize: {
             '6xl': '3.5rem',
@@ -108,7 +110,8 @@ export default {
         },
         fontFamily: {
           'title': ["Redressed"],
-          'taters': ["Fondamento, cursive"]
+          'taters': ["Fondamento, cursive"],
+          'archia':["archiaregular"]
           },
         letterSpacing: {
           superwide: '.5em'

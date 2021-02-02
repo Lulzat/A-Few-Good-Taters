@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&family=Josefin+Sans:wght@300;400;700&family=Pacifico&family=Roboto:wght@100;300;400;500;700;900&family=Satisfy&family=Shadows+Into+Light+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Grand+Hotel&family=La+Belle+Aurore&family=Marck+Script&family=Merienda:wght@400;700&family=Neucha&family=Norican&family=Redressed&display=swap');
 
+
+
+@font-face {
+  font-family: 'archiaregular';
+  src: url('~assets/fonts/Archia/archia-regular-webfont.eot');
+  src: url('~assets/fonts/Archia/archia-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('~assets/fonts/Archia/archia-regular-webfont.woff2') format('woff2'),
+       url('~assets/fonts/Archia/archia-regular-webfont.woff') format('woff'),
+       url('~assets/fonts/Archia/archia-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
 /**
 .container {
     margin: 0 auto;
