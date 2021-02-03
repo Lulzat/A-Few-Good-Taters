@@ -1,6 +1,6 @@
 <template>
   <div class=" w-full bg-white-200 font-sans leading-normal">
-    <div class="">
+    <div class="section-container">
       <section class="flex h-screen w-full justify-center md:items-center pt-16">
         <div class="flex flex-col rounded items-center text-center justify-center w-60 lg:w-2/4 h-104 bg-top lg:bg-bottom bg-fixed bg-contain lg:bg-cover lg:bg-center hero-wrapper">
           <div class="taters-wrapper border-t-4 border-b-4 w-full absolute">
@@ -8,10 +8,8 @@
           </div>
         </div>
       </section>
-      <div class="skew-cc"></div>
 
-
-      <section id="Projects" class="w-full text-gray-700 body-font">
+      <section id="Projects" class="w-full text-gray-700 body-font projects">
         <div class="container px-8 mx-auto lg:px-4">
           <div class="flex flex-wrap justify-center text-left">
             <div class="flex flex-col items-center w-full pt-8 flex-grow text-center pb-1 border-b-2">
@@ -173,26 +171,40 @@ export default {
     .taters-wrapper {
       /*mix-blend-mode: hard-light;*/
       white-space: nowrap;
-      border-color: rgb(104, 66, 66);
+      border-color: #7b3b3b;
     }
 
     .taters-knockout {
-      color: rgb(104, 66, 66);
+      color: #7b3b3b;
     }
     
     /*------------------*/
     /*  SKEW CLOCKWISE  */
     /*------------------*/
-    .skew-cc{
-      width:100%;
-      height:100px;
-      position:absolute;
-      left:0px;
-      background: linear-gradient(to right bottom, #fff 49%, #7b3b3b 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+
+    .section-container {
+      overflow: hidden;
+    }
+    .projects {
+      width: 100%;
+      position: relative;
+      margin-top: 150px;
+      background: #7b3b3b;
+      padding: 20px;
     }
 
-    #projects {
+    .projects::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -25%;
+      z-index: 0;
+      width: 125%;
+      height: 75%;
+      transform: rotate(-2deg);
+      transform-origin: 0 0;
       background-color: #7b3b3b;
+      box-shadow: inset 0px 5px 10px rgba(0,0,0,0.3)
     }
   
 </style>

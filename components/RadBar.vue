@@ -2,13 +2,13 @@
 <template>
   <header :class="scrolled ? 'scroll' : ''" class="navbar fixed p-3 z-50 w-full flex bg-transparent body-font justify-between md:justify-between p-1">
       <a href="/" class="flex items-center justify-center">
-        <h1 class="font-archia text-3xl text-tater-red hover:text-white hover:bg-tater-red-200 logo-text">A Few Good Taters</h1>
+        <h1 :class="scrolled ? 'scroll-text' : ''" class="font-archia text-3xl text-tater-red hover:text-white hover:bg-tater-red-200 logo-text">A Few Good Taters</h1>
       </a>
       <nav class="hidden md:flex flex-wrap items-center justify-center text-base md:ml-auto justify-center">
-        <a href="#Projects" class="mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Projects</a>
-        <a href="/blog" class="mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Blog</a>
-        <a href="#" class="mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Services</a>
-        <a href="#" class="mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Now</a>
+        <a href="#Projects" :class="scrolled ? 'scroll-text' : ''" class="font-archia mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Projects</a>
+        <a href="/blog" :class="scrolled ? 'scroll-text' : ''" class="font-archia mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Blog</a>
+        <a href="#" :class="scrolled ? 'scroll-text' : ''" class="font-archia mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Services</a>
+        <a href="#" :class="scrolled ? 'scroll-text' : ''" class="font-archia mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Now</a>
       </nav>
       <div id="burger" @click.prevent="drawer"
         class="justify-end items-center py-1 font-semibold transition duration-500 ease-in-out transform lg:inline-flex lg:mt-px"
@@ -140,7 +140,7 @@ export default {
 
     .navbar {
       transform: translate3d(0, 0, 0);
-      transition: all 100ms;
+      transition: all .2s ease-in;
     }
 
     .navbar.navbar--hidden {
@@ -219,7 +219,13 @@ export default {
     }
 
     .scroll {
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 7px rgba(0,0,0,0.4);
+    background-color: #7b3b3b;
+    transition: all .2s ease-in;
+  }
+
+    .scroll-text {
+    color:white;
   }
 
   .logo-text {
