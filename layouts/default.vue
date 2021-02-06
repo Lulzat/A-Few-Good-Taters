@@ -1,5 +1,5 @@
 <template>
-  <div class="main-body flex">
+  <div class="main-body flex bg-gray-50">
     <RadBar />
     <Nuxt />
   </div>
@@ -61,7 +61,4 @@ html {
   background-color: #35495e;
 }
 
-.main-body {
-  background-color: rgb(255, 255, 255);
-}
 </style>

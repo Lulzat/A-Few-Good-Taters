@@ -78,7 +78,8 @@ export default {
           colors: {
             'tater-red': 'rgb(104, 66, 66)',
             'tater-red-200': '#7b3b3b;',
-            'tater-tan': 'rgb(242, 231, 167)'
+            'tater-tan': 'rgb(242, 231, 167)',
+            'gray-50': '#F9FAFB'
           },
           height: {
             'screen-1/3': '33vh',
@@ -101,10 +102,13 @@ export default {
            },
           fontSize: {
             '6xl': '3.5rem',
-            '10xl': '5.5rem'
+            '10xl': '5.5rem',
+            '7vw': '7vw',
+            '4vw': '4vw'
           },
           letterSpacing: {
-            'super-wide': '2.5rem'
+            'super-wide': '2.5rem',
+            'pretty-wide': '1rem'
           }
            
         },

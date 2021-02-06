@@ -1,62 +1,81 @@
 <template>
   <div class=" w-full bg-white-200 font-sans leading-normal">
     <div class="section-container">
-      <section class="flex h-screen w-full justify-center md:items-center pt-16">
-        <div class="flex flex-col rounded items-center text-center justify-center w-60 lg:w-2/4 h-104 bg-top lg:bg-bottom bg-fixed bg-contain lg:bg-cover lg:bg-center hero-wrapper">
-          <div class="taters-wrapper border-t-4 border-b-4 w-full absolute">
-            <h1 class="taters-knockout font-taters text-6xl lg:text-10xl text-white tracking-super-wide">What We Need<br/>Right Now</h1>  
+      <section class="flex h-screen w-full justify-center md:items-center pt-32 lg:pt-16 lg:mb-40">
+        <div
+          class="flex flex-col items-center text-center justify-center w-60 lg:w-1/3 h-104 bg-top lg:bg-bottom bg-fixed bg-contain lg:bg-cover lg:bg-center hero-wrapper">
+          <div class="taters-wrapper border-t-4 border-b-4 border-tater-red w-screen relative">
+            <h1
+              class="taters-knockout font-taters text-7vw lg:text-4vw text-tater-red tracking-pretty-wide lg:tracking-super-wide">
+              What We Need</h1>
           </div>
         </div>
       </section>
 
-      <section id="Projects" class="w-full text-gray-700 body-font projects">
-        <div class="container px-8 mx-auto lg:px-4">
-          <div class="flex flex-wrap justify-center text-left">
-            <div class="flex flex-col items-center w-full pt-8 flex-grow text-center pb-1 border-b-2">
-              <h1 class="text-2xl font-bold tracking-wide text-center text-blue-800 lg:text-2xl title-font">
-                Projects
+      <section class="skews w-full text-gray-700 body-font">
+        <div class="container px-8 mx-auto lg:px-4 lg:pb-16">
+          <div class="container px-8 mx-auto pt-36 lg:px-4">
+            <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+              <div
+                class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mx-auto mb-5 text-blue-800 bg-gray-200 rounded-full">
+                <Taters />
+              </div>
+              <h1 class="mb-6 text-2xl font-semibold tracking-tighter text-white sm:text-6xl title-font">
+                A Long headline
+                <br class="">
+                to convey your users.
               </h1>
+              <p class="mx-auto text-base font-medium leading-relaxed text-white lg:w-1/2">Tailwind CSS
+                templates
+                with a wicked design.
+                Professionally designed and 100% responsive static templates for startups and personal
+                use.Whatever cardigan
+                tote bag tumblr hexagon brooklyn
+                asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of
+                them man
+                bun deep. </p>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="px-8 py-6 lg:w-1/3 md:w-full">
-              <div class="p-6 rounded-md bg-blueGray-200">
-                <img class="object-cover object-center w-full h-40 mb-6 rounded" src="/fizzbuzz-icon.png"
-                  alt="FizzBuzz Image">
-                <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">Fizzy.vue
-                </h2>
-                <p class="mb-4 text-base leading-relaxed">A Vue.js Implementation of the Classic FizzBuzz Test</p>
-                <a href="/Fizzy"
-                  class="inline-flex items-center font-semibold text-blue-700 md:mb-2 lg:mb-0 hover:text-blue-400 ">
-                  Check it out!
-                  <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
-                    height="20" fill="currentColor">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
-                  </svg>
-                </a>
-              </div>
-            </div>
+      <section class="skews-white w-screen bg-gray-50 text-gray-700 body-font">
+        <div class="px-8 py-6 w-full bg-white">
+          <div class="p-6 rounded-md bg-blueGray-200">
+            <img class="object-cover object-center w-full h-40 mb-6 rounded" src="/fizzbuzz-icon.png"
+              alt="FizzBuzz Image">
+            <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">Fizzy.vue
+            </h2>
+            <p class="mb-4 text-base leading-relaxed">A Vue.js Implementation of the Classic FizzBuzz Test</p>
+            <a href="/Fizzy"
+              class="inline-flex items-center font-semibold text-blue-700 md:mb-2 lg:mb-0 hover:text-blue-400 ">
+              Check it out!
+              <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                fill="currentColor">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
 
-            <div class="px-8 py-6 lg:w-1/3 md:w-full">
-              <div class="p-6 rounded-md bg-blueGray-200">
-                <img class="object-cover object-center w-full h-40 mb-6 rounded" src="/Logos/ESV/esv-logo.png"
-                  alt="ESV Image">
-                <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">DailyVerse.vue
-                </h2>
-                <p class="mb-4 text-base leading-relaxed">A daily bible verse utilizing the ESV Bible API</p>
-                <DailyVerse />
-                <a href="/ESVBible"
-                  class="inline-flex items-center font-semibold text-blue-700 md:mb-2 lg:mb-0 hover:text-blue-400 ">
-                  Check it out!
-                  <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
-                    height="20" fill="currentColor">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
+        <div class="px-8 py-6 lg:w-1/3 md:w-full">
+          <div class="p-6 rounded-md bg-blueGray-200">
+            <img class="object-cover object-center w-full h-40 mb-6 rounded" src="/Logos/ESV/esv-logo.png"
+              alt="ESV Image">
+            <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">DailyVerse.vue
+            </h2>
+            <p class="mb-4 text-base leading-relaxed">A daily bible verse utilizing the ESV Bible API</p>
+            <DailyVerse />
+            <a href="/ESVBible"
+              class="inline-flex items-center font-semibold text-blue-700 md:mb-2 lg:mb-0 hover:text-blue-400 ">
+              Check it out!
+              <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                fill="currentColor">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -141,70 +160,90 @@
 </template>
 
 <script>
-import 'animate.css';
+  import 'animate.css';
 
-export default {
-  head() {
-    return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
-    };
-  },
-}
+  export default {
+    head() {
+      return {
+        script: [{
+          src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'
+        }],
+      };
+    },
+  }
 </script>
 
 <style scoped>
-    .color-title {
-        color: rgb(130, 46, 46);
-        text-shadow: 4px 3px 2px rgba(11, 34, 8, 0.7);
-        font-size:7em;
-    }
+  .color-title {
+    color: rgb(130, 46, 46);
+    text-shadow: 4px 3px 2px rgba(11, 34, 8, 0.7);
+    font-size: 7em;
+  }
 
-    .top-shadow {
-      box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.25);
-    }
+  .hero-wrapper {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('/Tater-Farming.jpg');
+    /*box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5);*/
+    filter: invert();
+  }
 
-    .hero-wrapper {
-      background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),url('/Tater-Farming.jpg');
-      box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.30);
-    }
+  .taters-wrapper {
+    mix-blend-mode: color-dodge;
+    white-space: nowrap;
+    border-color:rgba(101, 255, 212, 0.57);
+  }
 
-    .taters-wrapper {
-      /*mix-blend-mode: hard-light;*/
-      white-space: nowrap;
-      border-color: #7b3b3b;
-    }
+  .taters-knockout {
+    color: rgba(255, 255, 255, 0.76);
+  }
 
-    .taters-knockout {
-      color: #7b3b3b;
-    }
-    
-    /*------------------*/
-    /*  SKEW CLOCKWISE  */
-    /*------------------*/
+  /*------------------*/
+  /*  SKEW CLOCKWISE  */
+  /*------------------*/
 
-    .section-container {
-      overflow: hidden;
-    }
-    .projects {
-      width: 100%;
-      position: relative;
-      margin-top: 150px;
-      background: #7b3b3b;
-      padding: 20px;
-    }
+  .section-container {
+    overflow: hidden;
+  }
 
-    .projects::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -25%;
-      z-index: 0;
-      width: 125%;
-      height: 75%;
-      transform: rotate(-2deg);
-      transform-origin: 0 0;
-      background-color: #7b3b3b;
-      box-shadow: inset 0px 5px 10px rgba(0,0,0,0.3)
-    }
+  .skews {
+    width: 100%;
+    position: relative;
+    background: #100e0b;
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .skews::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 130%;
+    height: 75%;
+    transform: rotate(-4deg);
+    transform-origin: 0 0;
+    background-color: #100e0b;
+    /*box-shadow: inset 0px 5px 10px rgba(0,0,0,0.3)*/
+  }
   
+  .skews-white {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .skews-white::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 130%;
+    height: 75%;
+    transform: rotate(-4deg);
+    transform-origin: 0 0;
+    background-color: rgb(249, 250, 251);
+    /*box-shadow: inset 0px 5px 10px rgba(0,0,0,0.3)*/
+  }
 </style>

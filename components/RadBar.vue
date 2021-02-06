@@ -1,8 +1,8 @@
 
 <template>
-  <header :class="scrolled ? 'scroll' : ''" class="navbar fixed p-3 z-50 w-full flex bg-transparent body-font justify-between md:justify-between p-1">
+  <header :class="scrolled ? 'scroll' : ''" class="navbar flex items-center bg-gray-50 fixed p-3 z-50 w-full flex body-font justify-between md:justify-between p-1">
       <a href="/" class="flex items-center justify-center">
-        <h1 :class="scrolled ? 'scroll-text' : ''" class="font-archia text-3xl text-tater-red hover:text-white hover:bg-tater-red-200 logo-text">A Few Good Taters</h1>
+        <h1 :class="scrolled ? 'scroll-text' : ''" class="font-archia text-2xl tracking-widest text-tater-red hover:text-white hover:bg-tater-red-200 logo-text">A Few Good Taters</h1>
       </a>
       <nav class="hidden md:flex flex-wrap items-center justify-center text-base md:ml-auto justify-center">
         <a href="#Projects" :class="scrolled ? 'scroll-text' : ''" class="font-archia mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Projects</a>
@@ -21,8 +21,6 @@
           </button>
         </slot>
     </div>
-
-
 
     <transition enter-class="opacity-0" enter-active-class="ease-out transition-medium" enter-to-class="opacity-100"
       leave-class="opacity-100" leave-active-class="ease-out transition-medium" leave-to-class="opacity-0">
@@ -133,11 +131,6 @@ export default {
 };
 </script>
 <style scoped>
-
-    header {
-      background-color: rgb(255, 255, 255);
-    }
-
     .navbar {
       transform: translate3d(0, 0, 0);
       transition: all .2s ease-in;
@@ -220,12 +213,7 @@ export default {
 
     .scroll {
     box-shadow: 0px 0px 7px rgba(0,0,0,0.4);
-    background-color: #7b3b3b;
     transition: all .2s ease-in;
-  }
-
-    .scroll-text {
-    color:white;
   }
 
   .logo-text {
