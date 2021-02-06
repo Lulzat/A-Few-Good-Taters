@@ -1,7 +1,7 @@
 <template>
 	<!--Container-->
-	<div class="container w-full md:max-w-3xl mx-auto mt-16 pt-20">
-
+	<div class="container w-full md:max-w-3xl mx-auto mt-16">
+		
 		<div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
 
 			<!--Title-->

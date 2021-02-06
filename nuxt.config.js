@@ -78,6 +78,7 @@ export default {
           colors: {
             'tater-red': 'rgb(104, 66, 66)',
             'tater-red-200': '#7b3b3b;',
+            'tater-blue': '#293f4d',
             'tater-tan': 'rgb(242, 231, 167)',
             'gray-50': '#F9FAFB'
           },

@@ -8,7 +8,7 @@
         <div class="flex justify-between container mx-auto">
             <div class="w-full">
                 <div class="flex items-center justify-between">
-                    <h1 class="text-xl font-bold text-gray-700 md:text-2xl">Post</h1>
+                    <h1 class="text-xl font-bold text-gray-700 md:text-2xl">Posts</h1>
                 </div>
                 <ul>
                   <li v-for="post of posts" :key="post.slug">
