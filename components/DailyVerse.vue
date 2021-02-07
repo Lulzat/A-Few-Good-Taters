@@ -421,5 +421,16 @@ beforeMount() {
 </script>
 
 <style>
+    .extra_text {
+        font-size: 3rem;
+        font-family: 'archiaregular';
+    }
 
+    .block-indent {
+        font-family: 'Inter', sans-serif;
+    }
+
+    .line {
+        padding-left: 0px !important;
+    }
 </style>

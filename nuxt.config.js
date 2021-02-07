@@ -116,7 +116,8 @@ export default {
         fontFamily: {
           'title': ["Redressed"],
           'taters': ["Fondamento, cursive"],
-          'archia':["archiaregular"]
+          'archia':["archiaregular"],
+          'inter': ['Inter']
           },
         letterSpacing: {
           superwide: '.5em'

@@ -248,6 +248,8 @@ export default {
 .po-tay-toes:hover {
   background:url("/po-tay-toes.gif");
   background-position: center;
+  box-shadow: 0px 0px 5px rgba(255,255,255,.5);
+  transition: all .2s ease-in;
 }
 
 .po-tay-toes:hover g {

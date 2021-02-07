@@ -20,12 +20,12 @@
                 class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mx-auto mb-5 text-blue-800 bg-gray-200 rounded-full">
                 <Taters />
               </div>
-              <h1 class="mb-6 text-2xl font-semibold tracking-tighter text-white sm:text-6xl title-font">
+              <h1 class="mb-6 text-2xl font-archia tracking-tighter text-white sm:text-6xl who-are-taters">
                 A Long headline
                 <br class="">
                 to convey your users.
               </h1>
-              <p class="mx-auto text-base font-medium leading-relaxed text-white lg:w-1/2">Tailwind CSS
+              <p class="mx-auto text-base font-inter leading-relaxed text-white lg:w-1/2">Tailwind CSS
                 templates
                 with a wicked design.
                 Professionally designed and 100% responsive static templates for startups and personal
@@ -39,8 +39,24 @@
         </div>
       </section>
 
-      <section class="skews-white w-screen bg-gray-50 text-gray-700 body-font">
-        <div class="px-8 py-6 w-full bg-white">
+      <section class="skews-white w-full text-gray-700 body-font">
+        <div class="container px-8 mx-auto lg:px-4 lg:pb-16">
+          <div class="container px-8 mx-auto pt-36 lg:px-4">
+            <div class="flex flex-col w-full mb-12 items-center text-center">
+              <EsvLogo />
+              <h1 class="mb-6 mt-6 text-4xl font-archia tracking-tighter text-tater-red votd-header">
+                ESV Verse of the Day
+              </h1>
+              <div class="verse-wrapper">
+              <DailyVerse />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-screen bg-gray-50 text-gray-700 body-font projects">
+        <div class="px-8 py-6 w-auto">
           <div class="p-6 rounded-md bg-blueGray-200">
             <img class="object-cover object-center w-full h-40 mb-6 rounded" src="/fizzbuzz-icon.png"
               alt="FizzBuzz Image">
@@ -48,26 +64,6 @@
             </h2>
             <p class="mb-4 text-base leading-relaxed">A Vue.js Implementation of the Classic FizzBuzz Test</p>
             <a href="/Fizzy"
-              class="inline-flex items-center font-semibold text-blue-700 md:mb-2 lg:mb-0 hover:text-blue-400 ">
-              Check it out!
-              <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                fill="currentColor">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="px-8 py-6 lg:w-1/3 md:w-full">
-          <div class="p-6 rounded-md bg-blueGray-200">
-            <img class="object-cover object-center w-full h-40 mb-6 rounded" src="/Logos/ESV/esv-logo.png"
-              alt="ESV Image">
-            <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">DailyVerse.vue
-            </h2>
-            <p class="mb-4 text-base leading-relaxed">A daily bible verse utilizing the ESV Bible API</p>
-            <DailyVerse />
-            <a href="/ESVBible"
               class="inline-flex items-center font-semibold text-blue-700 md:mb-2 lg:mb-0 hover:text-blue-400 ">
               Check it out!
               <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
@@ -194,6 +190,25 @@
 
   .taters-knockout {
     color: rgba(255, 255, 255, 0.76);
+  }
+
+  .who-are-taters {
+    text-shadow: 3px 3px 1px rgba(56, 113, 187, 0.57);
+  }
+
+  .verse-wrapper {
+    font-size: 2rem;
+    font-family: Inter;
+    color: rgb(45, 58, 68);
+  }
+
+  .votd-header {
+    color: rgb(45, 58, 68);
+    text-shadow: 3px 3px 1px rgba(187, 56, 56, 0.57);
+  }
+
+  .projects {
+    background-color: rgb(187, 56, 56)
   }
 
   /*------------------*/

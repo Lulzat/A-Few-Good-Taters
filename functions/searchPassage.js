@@ -13,7 +13,10 @@ exports.handler = function (event, context, callback) {
             params: {
                 'include-footnotes': false,
                 'include-footnote-body': false,
+                'include-first-verse-numbers': false,
+                'include-verse-numbers': false,
                 'include-short-copyright': false,
+                'include-audio-link': false,
                 'wrapping-div': true,
                 'inline-styles': true
             }
