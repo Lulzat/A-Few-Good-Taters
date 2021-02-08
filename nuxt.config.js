@@ -78,6 +78,7 @@ export default {
           colors: {
             'tater-red': 'rgb(104, 66, 66)',
             'tater-red-200': '#7b3b3b;',
+            'cyber-red': 'rgb(255, 0, 0)',
             'tater-blue': '#293f4d',
             'tater-tan': 'rgb(242, 231, 167)',
             'gray-50': '#F9FAFB'
@@ -109,7 +110,7 @@ export default {
           },
           letterSpacing: {
             'super-wide': '2.5rem',
-            'pretty-wide': '1rem'
+            'pretty-wide': '.75rem'
           }
            
         },

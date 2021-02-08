@@ -433,4 +433,13 @@ beforeMount() {
     .line {
         padding-left: 0px !important;
     }
+
+    .passage h3 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .passage p {
+        font-size: 1rem;
+    }
 </style>

@@ -5,7 +5,7 @@
 </li>-->
 
     <div class="flex mt-6 justify-center">
-        <div class="max-w-4xl px-10 py-6 bg-white rounded-lg shadow-md">
+        <div class="max-w-4xl px-10 py-6 bg-white rounded-lg post-wrapper">
             <div class="flex justify-between items-center"><span class="font-light text-gray-600">{{ post.date }}</span>
             </div>
             <div class="mt-2"><NuxtLink :to="'blog/'+post.slug" class="text-2xl text-gray-700 font-bold hover:underline">{{ post.title }}</NuxtLink>
@@ -33,3 +33,9 @@ export default {
   }
 }
 </script>
+
+<style>
+  .post-wrapper {
+    box-shadow: 0px 0px 10px rgb(0,0,0,0.5)
+  }
+</style>

@@ -16,7 +16,7 @@ export default {
 <style>
     #ESVLogo {
         width:10rem;
-        filter:drop-shadow(3px 3px 1px rgba(187, 56, 56, 0.57));
+        filter:drop-shadow(2px 2px 0px rgba(187, 56, 56, 0.57));
     }
     .esv-fill {
         fill: #2d3a44

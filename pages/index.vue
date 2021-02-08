@@ -4,48 +4,38 @@
       <section class="flex h-screen w-full justify-center md:items-center pt-32 lg:pt-16 lg:mb-40">
         <div
           class="flex flex-col items-center text-center justify-center w-60 lg:w-1/3 h-104 bg-top lg:bg-bottom bg-fixed bg-contain lg:bg-cover lg:bg-center hero-wrapper">
-          <div class="taters-wrapper border-t-4 border-b-4 border-tater-red w-screen relative">
+          <div class="taters-wrapper w-screen relative">
             <h1
-              class="taters-knockout font-taters text-7vw lg:text-4vw text-tater-red tracking-pretty-wide lg:tracking-super-wide">
+              class="taters-knockout font-taters text-7vw lg:text-4vw text-cyber-red tracking-pretty-wide lg:tracking-super-wide">
               What We Need</h1>
           </div>
         </div>
       </section>
 
       <section class="skews w-full text-gray-700 body-font">
-        <div class="container px-8 mx-auto lg:px-4 lg:pb-16">
-          <div class="container px-8 mx-auto pt-36 lg:px-4">
-            <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+        <div class="container mx-auto lg:px-4 lg:pb-16">
+          <div class="container mx-auto pt-36 lg:px-4">
+            <div class="flex flex-col w-full mb-12 text-center">
               <div
                 class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mx-auto mb-5 text-blue-800 bg-gray-200 rounded-full">
                 <Taters />
               </div>
-              <h1 class="mb-6 text-2xl font-archia tracking-tighter text-white sm:text-6xl who-are-taters">
-                A Long headline
-                <br class="">
-                to convey your users.
+              <h1 class="mb-6 text-2xl font-archia tracking-tighter text-white sm:text-7xl who-are-taters">
+                A Few Good Taters
               </h1>
-              <p class="mx-auto text-base font-inter leading-relaxed text-white lg:w-1/2">Tailwind CSS
-                templates
-                with a wicked design.
-                Professionally designed and 100% responsive static templates for startups and personal
-                use.Whatever cardigan
-                tote bag tumblr hexagon brooklyn
-                asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of
-                them man
-                bun deep. </p>
+              <p class="mx-auto text-base font-inter leading-relaxed text-white lg:w-1/2">The 'tater is simple. The 'tater is simple, yet despite it's simplicity this starchy root vegetable is packed full of vitamins & minerals and is versatile in its varied ways it can be prepared: Mashed, Fried, Boiled and stuck in a stew. I believe in simplicity, when the rest of the world has only gotten more complicated. This site is home to my thoughts as well as my simple web development experiments. Also, who doesn't love 'taters?</p>
             </div>
           </div>
         </div>
       </section>
 
       <section class="skews-white w-full text-gray-700 body-font">
-        <div class="container px-8 mx-auto lg:px-4 lg:pb-16">
-          <div class="container px-8 mx-auto pt-36 lg:px-4">
+        <div class="container mx-auto lg:px-4 lg:pb-16">
+          <div class="container mx-auto pt-36 lg:px-4">
             <div class="flex flex-col w-full mb-12 items-center text-center">
               <EsvLogo />
               <h1 class="mb-6 mt-6 text-4xl font-archia tracking-tighter text-tater-red votd-header">
-                ESV Verse of the Day
+                Daily Bible Verse
               </h1>
               <div class="verse-wrapper">
               <DailyVerse />
@@ -55,8 +45,23 @@
         </div>
       </section>
 
-      <section class="w-screen bg-gray-50 text-gray-700 body-font projects">
+      <section class="w-screen bg-gray-50 text-gray-700 body-font">
+        <h1 class="mb-6 mt-6 text-center text-4xl font-archia tracking-tighter text-tater-red posts-header">
+          Recent Posts:
+        </h1>
         <div class="px-8 py-6 w-auto">
+          <ul>
+            <li v-for="post of posts" :key="post.slug">
+              <PostPreview :post="post" />
+            </li> 
+          </ul>
+        </div>
+      </section>
+      <section id="projects" class="w-screen bg-gray-50 text-gray-700 body-font mt-20 projects">
+        <div class="py-6 w-auto">
+          <h1 class="mb-6 mt-6 text-center text-4xl font-archia tracking-tighter text-tater-red posts-header">
+          Projects:
+        </h1>
           <div class="p-6 rounded-md bg-blueGray-200">
             <img class="object-cover object-center w-full h-40 mb-6 rounded" src="/fizzbuzz-icon.png"
               alt="FizzBuzz Image">
@@ -157,7 +162,6 @@
 
 <script>
   import 'animate.css';
-
   export default {
     head() {
       return {
@@ -166,7 +170,22 @@
         }],
       };
     },
-  }
+    props: {
+      post: {
+        type: Object,
+        required: true
+      }
+    },
+    async asyncData({
+      $content
+    }) {
+      const posts = await $content("blog").fetch();
+
+      return {
+        posts,
+      };
+    },
+  };
 </script>
 
 <style scoped>
@@ -183,28 +202,37 @@
   }
 
   .taters-wrapper {
-    mix-blend-mode: color-dodge;
+    mix-blend-mode: luminosity;
     white-space: nowrap;
-    border-color:rgba(101, 255, 212, 0.57);
+    background-color: rgba(101,255,212,.57);
+    transform: rotate(4deg);
   }
 
   .taters-knockout {
-    color: rgba(255, 255, 255, 0.76);
+    color: rgb(255, 0, 0);
   }
 
   .who-are-taters {
-    text-shadow: 3px 3px 1px rgba(56, 113, 187, 0.57);
+    text-shadow: 2px 2px 0px rgba(56, 113, 187, 0.57);
   }
 
   .verse-wrapper {
     font-size: 2rem;
     font-family: Inter;
     color: rgb(45, 58, 68);
+    border-bottom: solid .25rem rgb(213, 140, 140);
+    padding: 2rem;
   }
 
   .votd-header {
     color: rgb(45, 58, 68);
-    text-shadow: 3px 3px 1px rgba(187, 56, 56, 0.57);
+    text-shadow: 2px 2px 0px rgba(187, 56, 56, 0.57);
+    border-bottom: solid .25rem rgb(213, 140, 140);
+  }
+  
+  .posts-header {
+    color: rgb(45, 58, 68);
+    text-shadow: 2px 2px 0px rgba(187, 56, 56, 0.57);
   }
 
   .projects {
