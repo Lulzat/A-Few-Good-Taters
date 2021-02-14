@@ -3,14 +3,13 @@
     class="navbar flex items-center bg-gray-50 fixed p-3 z-50 w-full flex body-font justify-between md:justify-between p-1">
     <a href="/" class="flex items-center justify-center">
       <h1 :class="scrolled ? 'scroll-text' : ''"
-        class="font-archia text-2xl tracking-widest text-tater-red hover:text-white hover:bg-tater-red-200 logo-text">A
-        Few Good Taters</h1>
+        class=" text-2xl tracking-widest logo-text">Taters.</h1>
     </a>
     <nav class="hidden md:flex flex-wrap items-center justify-center text-base md:ml-auto justify-center">
       <a href="#Projects" :class="scrolled ? 'scroll-text' : ''"
-        class="font-archia mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Projects</a>
+        class=" mr-5 text-sm font-semibold text-tater-red hover:text-white nav-links">Projects</a>
       <a href="/blog" :class="scrolled ? 'scroll-text' : ''"
-        class="font-archia mr-5 text-sm font-semibold text-tater-red hover:text-white hover:bg-tater-red-200 hover:border-b-2 hover:border-tater-red rounded-sm nav-links">Blog</a>
+        class=" mr-5 text-sm font-semibold text-tater-red hover:text-white nav-links">Blog</a>
     </nav>
     <div id="burger" @click.prevent="drawer"
       class="justify-end items-center py-1 font-semibold transition duration-500 ease-in-out transform lg:inline-flex lg:mt-px"
@@ -419,18 +418,37 @@
 
   .logo-text {
     padding: 0.25rem;
-    border-radius: 2px;
+    font-weight: bold;
+    font-family: calendas_plusregular;
+    letter-spacing: .5rem;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+    padding-left: 0.5rem;
+    background-color: #ffffff;
+    border: solid 1px #755f63;
+    color: #755f63;
+  }
+
+  .logo-text:hover {
+    background-color: #755f63;
+    color: #ffffff;
   }
 
   .nav-links {
     padding: .25rem;
-    width: 5rem;
+    width: 6rem;
     display: flex;
     justify-content: center;
+    font-family: calendas_plusregular;
+    letter-spacing: .25rem;
+  }
+
+  .nav-links:hover {
+    background-color: #755f63;
   }
 
   .po-tay-toes {
     background-color: #293f4d;
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.7));
   }
+
 </style>

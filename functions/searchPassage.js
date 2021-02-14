@@ -17,8 +17,8 @@ exports.handler = function (event, context, callback) {
                 'include-verse-numbers': false,
                 'include-short-copyright': false,
                 'include-audio-link': false,
-                'wrapping-div': true,
-                'inline-styles': true
+                'include-passage-references': false,
+                'include-headings': false
             }
         })
         .then(

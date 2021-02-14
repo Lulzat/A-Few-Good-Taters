@@ -264,7 +264,7 @@ export default {
 }
 
 .tatersLogoFillOne {
-  fill:  rgb(195, 108, 132);
+  fill: rgb(117, 95, 99);
 }
 
 .tatersLogoFillTwo {

@@ -1,14 +1,17 @@
 <template>
   <div class=" w-full bg-white-200 font-sans leading-normal">
     <div class="section-container">
-      <section class="flex h-screen w-full justify-center md:items-center pt-32 lg:pt-16 lg:mb-40">
+      <section class="flex flex-col h-screen w-full justify-center items-center pt-32 lg:pt-16 lg:mb-40">
         <div
-          class="flex flex-col items-center text-center justify-center w-60 lg:w-1/3 h-104 bg-top lg:bg-bottom bg-fixed bg-contain lg:bg-cover lg:bg-center hero-wrapper">
+          class="flex flex-col items-center text-center justify-center w-60 lg:w-1/3 h-104 bg-top lg:bg-bottom bg-contain lg:bg-cover lg:bg-center hero-wrapper">
           <div class="taters-wrapper w-screen relative">
             <h1
-              class="taters-knockout font-taters text-7vw lg:text-4vw text-cyber-red tracking-pretty-wide lg:tracking-super-wide">
-              What We Need</h1>
+              class="taters-knockout font-archia text-7vw lg:text-4vw text-cyber-red tracking-pretty-wide lg:tracking-super-wide">
+              {{this.dailyVerse}}</h1>
           </div>
+        </div>
+        <div class="verse-wrapper">
+          <DailyVerse @dailyVerse="dailyVerseValue" />
         </div>
       </section>
 
@@ -20,98 +23,16 @@
                 class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mx-auto mb-5 text-blue-800 bg-gray-200 rounded-full">
                 <Taters />
               </div>
-              <h1 class="mb-6 text-2xl font-archia tracking-tighter text-white sm:text-7xl who-are-taters">
-                A Few Good Taters
+               <h1 class="text-center text-4xl font-archia tracking-tighter text-tater-red posts-header">
+                Recent Posts:
               </h1>
-              <p class="mx-auto text-base font-inter leading-relaxed text-white lg:w-1/2">The 'tater is simple. The 'tater is simple, yet despite it's simplicity this starchy root vegetable is packed full of vitamins & minerals and is versatile in its varied ways it can be prepared: Mashed, Fried, Boiled and stuck in a stew. I believe in simplicity, when the rest of the world has only gotten more complicated. This site is home to my thoughts as well as my simple web development experiments. Also, who doesn't love 'taters?</p>
-            </div>
-          </div>
+              <div class="px-8 py-6 w-auto">
+                <ul>
+                  <li v-for="post of posts" :key="post.slug">
+                    <PostPreview :post="post" />
+                  </li>
+                </ul>
         </div>
-      </section>
-
-      <section class="skews-white w-full text-gray-700 body-font">
-        <div class="container mx-auto lg:px-4 lg:pb-16">
-          <div class="container mx-auto pt-36 lg:px-4">
-            <div class="flex flex-col w-full mb-12 items-center text-center">
-              <EsvLogo />
-              <h1 class="mb-6 mt-6 text-4xl font-archia tracking-tighter text-tater-red votd-header">
-                Daily Bible Verse
-              </h1>
-              <div class="verse-wrapper">
-              <DailyVerse />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="w-screen bg-gray-50 text-gray-700 body-font">
-        <h1 class="mb-6 mt-6 text-center text-4xl font-archia tracking-tighter text-tater-red posts-header">
-          Recent Posts:
-        </h1>
-        <div class="px-8 py-6 w-auto">
-          <ul>
-            <li v-for="post of posts" :key="post.slug">
-              <PostPreview :post="post" />
-            </li> 
-          </ul>
-        </div>
-      </section>
-      <section id="projects" class="w-screen bg-gray-50 text-gray-700 body-font mt-20 projects">
-        <div class="py-6 w-auto">
-          <h1 class="mb-6 mt-6 text-center text-4xl font-archia tracking-tighter text-tater-red posts-header">
-          Projects:
-        </h1>
-          <div class="p-6 rounded-md bg-blueGray-200">
-            <img class="object-cover object-center w-full h-40 mb-6 rounded" src="/fizzbuzz-icon.png"
-              alt="FizzBuzz Image">
-            <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">Fizzy.vue
-            </h2>
-            <p class="mb-4 text-base leading-relaxed">A Vue.js Implementation of the Classic FizzBuzz Test</p>
-            <a href="/Fizzy"
-              class="inline-flex items-center font-semibold text-blue-700 md:mb-2 lg:mb-0 hover:text-blue-400 ">
-              Check it out!
-              <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                fill="currentColor">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="mx-auto">
-        <div class="container px-5 mx-auto lg:px-16 lg:py-24">
-          <div class="flex flex-col items-center w-full pt-8 flex-grow text-center pb-1 border-b-2">
-            <h1
-              class="flex items-center text-2xl font-bold tracking-wide text-center text-blue-800 lg:text-2xl title-font">
-              The Tech That I <svg class="h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              </svg>
-            </h1>
-          </div>
-          <div class="grid grid-cols-3 gap-16 my-16 text-center lg:grid-cols-6">
-            <div class="flex justify-center ">
-              <img src="/Logos/Vue/Vue-JS-01.svg" alt="Vue.js" class="block object-contain h-52">
-            </div>
-            <div class="flex justify-center ">
-              <img src="/Logos/Python/Python-01.svg" alt="Python" class="block object-contain h-52">
-            </div>
-            <div class="flex justify-center ">
-              <img src="/Logos/Microsoft/Microsoft-Dotnet-01.svg" alt="DotNet" class="block object-contain h-52">
-            </div>
-            <div class="flex justify-center ">
-              <img src="/Logos/MSSQL/Microsoft-sql-server-01.svg" alt="MSSQL" class="block object-contain h-52">
-            </div>
-            <div class="flex justify-center ">
-              <img src="/Logos/Netlify/Netlify-01.svg" alt="Netlify" class="block object-contain h-52">
-            </div>
-            <div class="flex justify-center ">
-              <img src="/Logos/Tailwindcss/Tailwindcss-wordmark-01.svg" alt="Tailwindcss"
-                class="block object-contain h-52">
             </div>
           </div>
         </div>
@@ -162,6 +83,7 @@
 
 <script>
   import 'animate.css';
+
   export default {
     head() {
       return {
@@ -170,10 +92,20 @@
         }],
       };
     },
+    data() {
+      return {
+        dailyVerse: 'John 3:17'
+      }
+    },
     props: {
       post: {
         type: Object,
         required: true
+      }
+    },
+    methods: {
+      dailyVerseValue: function (params) {
+        this.dailyVerse = params;
       }
     },
     async asyncData({
@@ -196,20 +128,27 @@
   }
 
   .hero-wrapper {
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('/Tater-Farming.jpg');
-    /*box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5);*/
-    filter: invert();
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    position: relative;
+    background-image: linear-gradient(0deg, rgba(11, 11, 11, 0.3), rgba(164, 164, 164, 0.65)), url('/tater-farming.jpg');
+    height: 50vh;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
   }
 
   .taters-wrapper {
-    mix-blend-mode: luminosity;
     white-space: nowrap;
-    background-color: rgba(101,255,212,.57);
-    transform: rotate(4deg);
+    padding: 0rem;
+    mix-blend-mode: color-dodge;
+    background-color: rgba(106, 51, 51, 0.67);
   }
 
   .taters-knockout {
-    color: rgb(255, 0, 0);
+    font-family: calendas_plusregular;
+    font-weight: bold;
+    background-color: #755f63;
+    color: rgb(0, 0, 0);
   }
 
   .who-are-taters {
@@ -220,8 +159,7 @@
     font-size: 2rem;
     font-family: Inter;
     color: rgb(45, 58, 68);
-    border-bottom: solid .25rem rgb(213, 140, 140);
-    padding: 2rem;
+    padding: 3rem;
   }
 
   .votd-header {
@@ -229,10 +167,10 @@
     text-shadow: 2px 2px 0px rgba(187, 56, 56, 0.57);
     border-bottom: solid .25rem rgb(213, 140, 140);
   }
-  
+
   .posts-header {
-    color: rgb(45, 58, 68);
-    text-shadow: 2px 2px 0px rgba(187, 56, 56, 0.57);
+    color: rgb(248, 252, 255);
+    font-family: calendas_plusregular;
   }
 
   .projects {
@@ -250,7 +188,7 @@
   .skews {
     width: 100%;
     position: relative;
-    background: #100e0b;
+    background: #755f63;
     padding: 20px;
     z-index: 1;
   }
@@ -265,10 +203,10 @@
     height: 75%;
     transform: rotate(-4deg);
     transform-origin: 0 0;
-    background-color: #100e0b;
+    background: #755f63;
     /*box-shadow: inset 0px 5px 10px rgba(0,0,0,0.3)*/
   }
-  
+
   .skews-white {
     width: 100%;
     position: relative;
@@ -289,4 +227,6 @@
     background-color: rgb(249, 250, 251);
     /*box-shadow: inset 0px 5px 10px rgba(0,0,0,0.3)*/
   }
+
+
 </style>
