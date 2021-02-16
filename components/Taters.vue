@@ -264,7 +264,7 @@ export default {
 }
 
 .tatersLogoFillOne {
-  fill: rgb(117, 95, 99);
+  fill: #d94848
 }
 
 .tatersLogoFillTwo {
@@ -272,8 +272,8 @@ export default {
 }
 
 .background-title {
-        border-radius: 100%;
-    }
+    border-radius: 100%;
+}
 
 .tan {
   color: rgb(173,171,127)

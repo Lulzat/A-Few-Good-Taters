@@ -1,9 +1,9 @@
 <template>
   <div class=" w-full bg-white-200 font-sans leading-normal">
     <div class="section-container">
-      <section class="flex flex-col h-screen w-full justify-center items-center pt-32 lg:pt-16 lg:mb-40">
+      <section class="flex flex-col h-screen w-full justify-center items-center pt-32 lg:pt-16">
         <div
-          class="flex flex-col items-center text-center justify-center w-60 lg:w-1/3 h-104 bg-top lg:bg-bottom bg-contain lg:bg-cover lg:bg-center hero-wrapper">
+          class="flex flex-col items-center text-center justify-center w-60 lg:w-1/3 lg:mt-12 h-104 bg-top lg:bg-bottom bg-contain lg:bg-cover lg:bg-center hero-wrapper">
           <div class="taters-wrapper w-screen relative">
             <h1
               class="taters-knockout font-archia text-7vw lg:text-4vw text-cyber-red tracking-pretty-wide lg:tracking-super-wide">
@@ -15,12 +15,17 @@
         </div>
       </section>
 
-      <section class="skews w-full text-gray-700 body-font">
+      <section class="w-full text-gray-700 body-font post-post-div relative">
+        <div class="custom-shape-divider-top-1613438750">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+            </svg>
+        </div>
         <div class="container mx-auto lg:px-4 lg:pb-16">
           <div class="container mx-auto pt-36 lg:px-4">
             <div class="flex flex-col w-full mb-12 text-center">
               <div
-                class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mx-auto mb-5 text-blue-800 bg-gray-200 rounded-full">
+                class="inline-flex items-center justify-center flex-shrink-0 mt-16 w-20 h-20 mx-auto mb-5 text-blue-800 bg-gray-200 rounded-full">
                 <Taters />
               </div>
                <h1 class="text-center text-4xl font-archia tracking-tighter text-tater-red posts-header">
@@ -132,23 +137,22 @@
     background-position: center;
     width: 80%;
     position: relative;
-    background-image: linear-gradient(0deg, rgba(11, 11, 11, 0.3), rgba(164, 164, 164, 0.65)), url('/tater-farming.jpg');
     height: 50vh;
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.51), hsla(0, 0%, 31.8%, 0.65)), url('/tater-farming.jpg');
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, .3));
   }
 
   .taters-wrapper {
     white-space: nowrap;
     padding: 0rem;
     mix-blend-mode: color-dodge;
-    background-color: rgba(106, 51, 51, 0.67);
   }
 
   .taters-knockout {
     font-family: calendas_plusregular;
     font-weight: bold;
-    background-color: #755f63;
-    color: rgb(0, 0, 0);
+    background-color: #535353;
+    color: #d94848;
   }
 
   .who-are-taters {
@@ -177,6 +181,10 @@
     background-color: rgb(187, 56, 56)
   }
 
+  .post-post-div {
+    background-color: #2b2b2b;
+  }
+
   /*------------------*/
   /*  SKEW CLOCKWISE  */
   /*------------------*/
@@ -188,7 +196,7 @@
   .skews {
     width: 100%;
     position: relative;
-    background: #755f63;
+    background: #373737;
     padding: 20px;
     z-index: 1;
   }
@@ -203,30 +211,20 @@
     height: 75%;
     transform: rotate(-4deg);
     transform-origin: 0 0;
-    background: #755f63;
+    background: #373737;
     /*box-shadow: inset 0px 5px 10px rgba(0,0,0,0.3)*/
   }
 
-  .skews-white {
-    width: 100%;
-    position: relative;
-    padding: 20px;
-    z-index: 1;
-  }
-
-  .skews-white::before {
-    content: '';
+  .custom-shape-divider-top-1613438750 {
     position: absolute;
     top: 0;
-    left: -25%;
-    z-index: -1;
-    width: 130%;
-    height: 75%;
-    transform: rotate(-4deg);
-    transform-origin: 0 0;
-    background-color: rgb(249, 250, 251);
-    /*box-shadow: inset 0px 5px 10px rgba(0,0,0,0.3)*/
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
   }
 
-
+  .shape-fill {
+    fill: #f9fafb;
+  }
 </style>

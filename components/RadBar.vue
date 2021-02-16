@@ -7,18 +7,18 @@
     </a>
     <nav class="hidden md:flex flex-wrap items-center justify-center text-base md:ml-auto justify-center">
       <a href="#Projects" :class="scrolled ? 'scroll-text' : ''"
-        class=" mr-5 text-sm font-semibold text-tater-red hover:text-white nav-links">Projects</a>
+        class=" mr-5 text-sm font-semibold nav-links">Projects</a>
       <a href="/blog" :class="scrolled ? 'scroll-text' : ''"
-        class=" mr-5 text-sm font-semibold text-tater-red hover:text-white nav-links">Blog</a>
+        class=" mr-5 text-sm font-semibold nav-links">Blog</a>
     </nav>
     <div id="burger" @click.prevent="drawer"
       class="justify-end items-center py-1 font-semibold transition duration-500 ease-in-out transform lg:inline-flex lg:mt-px"
       aria-label="Open Menu">
       <slot>
         <button type="button" class="burger-button" title="Menu">
-          <span class="burger-bar burger-bar--1 bg-tater-red hover:bg-tater-red-200"></span>
-          <span class="burger-bar burger-bar--2 bg-tater-red hover:bg-tater-red-200"></span>
-          <span class="burger-bar burger-bar--3 bg-tater-red hover:bg-tater-red-200"></span>
+          <span class="burger-bar burger-bar--1"></span>
+          <span class="burger-bar burger-bar--2"></span>
+          <span class="burger-bar burger-bar--3"></span>
         </button>
       </slot>
     </div>
@@ -371,6 +371,7 @@
     width: auto;
     margin-top: -1px;
     transition: transform .6s cubic-bezier(.165, .84, .44, 1), opacity .3s cubic-bezier(.165, .84, .44, 1), background-color .6s cubic-bezier(.165, .84, .44, 1);
+    background-color: #535353
   }
 
   .burger-bar--1 {
@@ -385,10 +386,13 @@
 
   .burger-button:hover .burger-bar--2 {
     transform: scaleX(1);
+    background-color: #d94848;
   }
 
   .no-touchevents .burger-bar--2:hover {
     transform: scaleX(1);
+    background-color: #d94848;
+    
   }
 
   .burger-bar--3 {
@@ -423,13 +427,13 @@
     letter-spacing: .5rem;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
     padding-left: 0.5rem;
-    background-color: #ffffff;
-    border: solid 1px #755f63;
-    color: #755f63;
+    background-color: #f9fafb;
+    border: 1px solid #535353;
+    color: #d94848;
   }
 
   .logo-text:hover {
-    background-color: #755f63;
+    background-color: #535353;
     color: #ffffff;
   }
 
@@ -440,14 +444,16 @@
     justify-content: center;
     font-family: calendas_plusregular;
     letter-spacing: .25rem;
+    color: #535353;
   }
 
   .nav-links:hover {
-    background-color: #755f63;
+    background-color: #535353;
+    color: #d94848;
   }
 
   .po-tay-toes {
-    background-color: #293f4d;
+    background-color: #535353;
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.7));
   }
 
