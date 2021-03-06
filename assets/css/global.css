@@ -342,5 +342,188 @@
        url('~assets/fonts/Wotfard/wotfard-regular-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-
 }
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url('~assets/fonts/Alegreya/Alegreya-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('~assets/fonts/Alegreya/Alegreya-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('~assets/fonts/Alegreya/Alegreya-Medium.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('~assets/fonts/Alegreya/Alegreya-MediumItalic.ttf') format('truetype');
+  font-weight: medium;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('~assets/fonts/Alegreya/Alegreya-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('~assets/fonts/Alegreya/Alegreya-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('~assets/fonts/Alegreya/Alegreya-ExtraBold.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('~assets/fonts/Alegreya/Alegreya-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AlegreyaSC';
+  src: url('~assets/fonts/Alegreya/AlegreyaSC-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AlegreyaSC';
+  src: url('~assets/fonts/Alegreya/AlegreyaSC-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'AlegreyaSC';
+  src: url('~assets/fonts/Alegreya/AlegreyaSC-Medium.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AlegreyaSC';
+  src: url('~assets/fonts/Alegreya/AlegreyaSC-MediumItalic.ttf') format('truetype');
+  font-weight: medium;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'AlegreyaSC';
+  src: url('~assets/fonts/Alegreya/AlegreyaSC-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AlegreyaSC';
+  src: url('~assets/fonts/Alegreya/AlegreyaSC-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'AlegreyaSC';
+  src: url('~assets/fonts/Alegreya/AlegreyaSC-ExtraBold.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AlegreyaSC';
+  src: url('~assets/fonts/Alegreya/AlegreyaSC-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bitter';
+  src: url('~assets/fonts/Bitter/BitterPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('~assets/fonts/Bitter/BitterPro-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('~assets/fonts/Bitter/BitterPro-ExtraLight.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('~assets/fonts/Bitter/BitterPro-ExtraLightItalic.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('~assets/fonts/Bitter/BitterPro-Thin.ttf') format('truetype');
+  font-weight: thin;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('~assets/fonts/Bitter/BitterPro-ThinItalic.ttf') format('truetype');
+  font-weight: thin;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('~assets/fonts/Bitter/BitterPro-Medium.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('~assets/fonts/Bitter/BitterPro-MediumItalic.ttf') format('truetype');
+  font-weight: medium;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('~assets/fonts/Bitter/BitterPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('~assets/fonts/Bitter/BitterPro-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('~assets/fonts/Bitter/BitterPro-ExtraBold.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('~assets/fonts/Bitter/BitterPro-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('~assets/fonts/Bitter/BitterPro-SemiBold.ttf') format('truetype');
+  font-weight: thick;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('~assets/fonts/Bitter/BitterPro-SemiBoldItalic.ttf') format('truetype');
+  font-weight: thick;
+  font-style: italic;
+}
+

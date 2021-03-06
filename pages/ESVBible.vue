@@ -1,425 +1,230 @@
 <template>
-    <div>
-        <div v-if="this.data"> 
-            <div class="content" v-html="this.data.passages[0]">
-            </div>         
+  <div class=" w-full bg-white-200 font-sans leading-normal">
+    <div class="section-container">
+      <section class="flex flex-col h-screen w-full justify-center items-center pt-32 lg:pt-16">
+        <div
+          class="flex flex-col items-center text-center justify-center w-60 lg:w-1/3 lg:mt-12 h-104 bg-top lg:bg-bottom bg-contain lg:bg-cover lg:bg-center hero-wrapper">
+          <div class="taters-wrapper w-screen relative">
+            <h1
+              class="taters-knockout font-archia text-7vw lg:text-4vw text-cyber-red tracking-pretty-wide lg:tracking-super-wide">
+              {{this.dailyVerse}}</h1>
+          </div>
         </div>
+        <div class="verse-wrapper">
+          <DailyVerse @dailyVerse="dailyVerseValue" />
+        </div>
+      </section>
+
+      <section class="w-full text-gray-700 body-font post-post-div relative">
+        <div class="custom-shape-divider-top-1613438750">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container mx-auto lg:px-4 lg:pb-16">
+          <div class="container mx-auto pt-36 lg:px-4">
+            <div class="flex flex-col w-full mb-12 text-center">
+              <div
+                class="inline-flex items-center justify-center flex-shrink-0 mt-16 w-20 h-20 mx-auto mb-5 text-blue-800 bg-gray-200 rounded-full">
+                <Taters />
+              </div>
+               <h1 class="text-center text-4xl font-archia tracking-tighter text-tater-red posts-header">
+                Recent Posts:
+              </h1>
+              <div class="px-8 py-6 w-auto">
+                <ul>
+                  <li v-for="post of posts" :key="post.slug">
+                    <PostPreview :post="post" />
+                  </li>
+                </ul>
+        </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+    <footer class="mt-16 text-gray-700 bg-white border-t body-font">
+      <div class="border-t border-gray-200">
+        <div class="container flex flex-col flex-wrap items-center justify-between p-5 mx-auto md:flex-row">
+          <a class="flex items-center w-32 mb-4 font-medium text-gray-900 title-font md:mb-0">
+
+          </a>
+          <div class="flex flex-wrap items-center justify-center mx-auto text-base md:ml-auto md:mr-auto">
+            <p>Scripture quotations are from the ESV® Bible (The Holy Bible, English Standard Version®), copyright ©
+              2001 by Crossway, a publishing ministry of Good News Publishers. Used by permission. All rights reserved.
+              You may not copy or download more than 500 consecutive verses of the ESV Bible or more than one half of
+              any book of the ESV Bible.</p>
+          </div>
+          <div class="inline-flex items-center justify-center md:justify-start ">
+            <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+              <a class="text-blue-807 hover:text-blue-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-4 text-blue-870 hover:text-blue-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+              </a>
+              <a class="ml-4 text-blue-870 hover:text-blue-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </template>
 
 <script>
-import Vue from 'vue'
-import axios from 'axios'
-import VueAxios from 'vue-axios'
+  import 'animate.css';
 
-Vue.use(VueAxios, axios)
-
-export default {
-data() {
-    return {
-        data: [],
-        dailyVerses: {
-            1 : 'John 14:6',
-            2 : 'Matthew 28:19',
-            3 : 'Romans 3:23',
-            4 : 'Ephesians 2:8',
-            5 : 'Genesis 1:1',
-            6 : 'Acts 1:8',
-            7 : '2 Timothy 3:16',
-            8 : 'Romans 10:9',
-            9 : 'Romans 6:23',
-            10 : 'Acts 2:38',
-            11 : 'John 1:12',
-            12 : 'Romans 8:28',
-            13 : 'John 1:9',
-            14 : 'Genesis 1:26',
-            15 : 'Romans 12:1',
-            16 : 'Romans 5:8',
-            17 : 'Matthew 28:18',
-            18 : 'John 3:3',
-            19 : 'Mark 16:15',
-            20 : 'John 10:10',
-            21 : 'John 1:14',
-            22 : 'Acts 4:12',
-            23 : 'Acts 2:42',
-            24 : 'John 3:1',
-            25 : 'Galatians 5:22',
-            26 : 'Proverbs 3:5',
-            27 : 'Jeremiah 29:11',
-            28 : 'John 2:1',
-            29 : 'Titus 3:5',
-            30 : 'Romans 12:2',
-            31 : 'John 14:1',
-            32 : 'John 4:1',
-            33 : 'Ephesians 4:11',
-            34 : 'Romans 5:12',
-            35 : 'Matthew 11:28',
-            36 : 'Romans 5:1',
-            37 : 'Genesis 1:27',
-            38 : 'Romans 1:16',
-            39 : '1 John 1:9',
-            40 : 'Acts 2:1',
-            41 : '2 Corinthians 5:17',
-            42 : 'Hebrews 11:1',
-            43 : '2 Timothy 2:15',
-            44 : 'Romans 8:1',
-            45 : 'Romans 10:13',
-            46 : 'John 8:32',
-            47 : 'Isaiah 9:6',
-            48 : 'John 14:15',
-            49 : 'Deuteronomy 6:4',
-            50 : 'John 13:34',
-            51 : 'John 4:24',
-            52 : 'Philippians 4:13',
-            53 : 'Ephesians 2:1',
-            54 : 'John 14:16',
-            55 : 'Genesis 1:2',
-            56 : 'Hebrews 4:12',
-            57 : 'James 5:16',
-            58 : 'Isaiah 7:14',
-            59 : 'John 1:7',
-            60 : 'John 3:5',
-            61 : 'Philippians 2:5',
-            62 : 'John 1:29',
-            63 : 'Romans 1:18',
-            64 : 'Philippians 4:6',
-            65 : 'Hebrews 12:1',
-            66 : 'John 1:3',
-            67 : 'Matthew 16:18',
-            68 : 'Acts 17:11',
-            69 : 'Galatians 2:20',
-            70 : 'Matthew 25:31',
-            71 : 'Matthew 5:17',
-            72 : 'Romans 10:17',
-            73 : 'Matthew 6:33',
-            74 : 'Luke 4:18',
-            75 : 'John 16:13',
-            76 : 'Acts 20:28',
-            77 : 'Titus 2:11',
-            78 : 'John 8:44',
-            79 : 'Ephesians 6:10',
-            80 : 'Romans 13:1',
-            81 : 'John 2:15',
-            82 : 'Mark 16:16',
-            83 : 'Romans 3:10',
-            84 : 'Genesis 3:15',
-            85 : 'Hebrews 11:6',
-            86 : 'John 14:26',
-            87 : 'John 5:24',
-            88 : 'Joel 2:28',
-            89 : 'Genesis 1:11',
-            90 : 'James 1:2',
-            91 : 'Colossians 1:15',
-            92 : 'Matthew 22:37',
-            93 : 'Titus 2:13',
-            94 : 'Philippians 4:8',
-            95 : 'Acts 1:9',
-            96 : 'John 4:7',
-            97 : 'Micah 6:8',
-            98 : 'John 17:17',
-            99 : 'Leviticus 18:22',
-            100 : 'Acts 20:7',
-            101 : 'Acts 16:31',
-            102 : 'John 11:25',
-            103 : 'John 8:58',
-            104 : 'Acts 2:4',
-            105 : 'John 15:5',
-            106 : 'Acts 2:41',
-            107 : 'Proverbs 22:6',
-            108 : 'Genesis 3:1',
-            109 : 'James 1:5',
-            110 : 'Hebrews 1:1',
-            111 : '2 John 1:2',
-            112 : 'John 17:3',
-            113 : 'Luke 16:19',
-            114 : 'John 5:7',
-            115 : 'John 8:31',
-            116 : 'Luke 1:4',
-            117 : 'Revelation 3:20',
-            118 : '1 Peter 2:3',
-            119 : 'John 10:30',
-            120 : '1 Peter 3:15',
-            121 : 'Matthew 7:21',
-            122 : 'John 3:18',
-            123 : 'Genesis 12:1',
-            124 : 'John 3:8',
-            125 : 'John 15:1',
-            126 : 'Genesis 2:7',
-            127 : 'Genesis 1:3',
-            128 : 'John 8:12',
-            129 : '1 Peter 2:9',
-            130 : 'Luke 1:26',
-            131 : 'Hebrews 9:27',
-            132 : 'John 3:2',
-            133 : 'Matthew 5:14',
-            134 : 'Exodus 3:14',
-            135 : '1 Corinthians 6:9',
-            136 : 'Luke 10:25',
-            137 : 'Matthew 7:7',
-            138 : 'John 1:8',
-            139 : 'Ephesians 1:3',
-            140 : 'Matthew 1:18',
-            141 : 'Romans 1:20',
-            142 : 'John 8:9',
-            143 : 'John 1:5',
-            144 : '1 Thessalonians 4:13',
-            145 : 'Hebrews 13:5',
-            146 : '1 John 4:1',
-            147 : 'James 1:17',
-            148 : 'Matthew 6:19',
-            149 : 'Isaiah 61:1',
-            150 : 'Galatians 3:28',
-            151 : '2 Peter 3:9',
-            152 : 'Acts 1:11',
-            153 : 'James 5:14',
-            154 : 'John 3:36',
-            155 : 'Ephesians 6:12',
-            156 : 'Matthew 6:9',
-            157 : 'Acts 3:19',
-            158 : 'James 2:14',
-            159 : 'Isaiah 40:31',
-            160 : 'John 3:17',
-            161 : 'Luke 1:35',
-            162 : 'Genesis 1:28',
-            163 : 'Ephesians 2:10',
-            164 : '2 Corinthians 5:21',
-            165 : 'Romans 6:1',
-            166 : 'Ephesians 1:13',
-            167 : 'Romans 6:3',
-            168 : 'Matthew 18:15',
-            169 : '1 John 4:5',
-            170 : 'Luke 2:1',
-            171 : 'James 1:27',
-            172 : 'John 16:33',
-            173 : 'John 5:28',
-            174 : 'John 5:39',
-            175 : 'Titus 2:3',
-            176 : 'John 4:23',
-            177 : 'Matthew 7:1',
-            178 : '1 Timothy 2:5',
-            179 : 'Matthew 4:1',
-            180 : 'John 1:18',
-            181 : 'Ephesians 4:1',
-            182 : 'John 5:1',
-            183 : 'Ephesians 5:18',
-            184 : 'Ephesians 5:22',
-            185 : 'Revelation 21:1',
-            186 : 'Micah 5:2',
-            187 : '2 Peter 3:4',
-            188 : 'John 6:44',
-            189 : 'John 20:19',
-            190 : 'Psalms 119:105',
-            191 : 'Genesis 2:18',
-            192 : '1 John 1:7',
-            193 : '1 Corinthians 15:3',
-            194 : 'Isaiah 53:5',
-            195 : 'Ephesians 1:7',
-            196 : 'Ephesians 5:25',
-            197 : 'Romans 8:9',
-            198 : 'John 15:13',
-            199 : 'Galatians 5:16',
-            200 : 'John 3:14',
-            201 : 'John 3:4',
-            202 : 'Luke 15:11',
-            203 : 'Matthew 7:13',
-            204 : 'James 1:22',
-            205 : 'Genesis 2:24',
-            206 : 'John 10:27',
-            207 : 'Colossians 1:16',
-            208 : 'Colossians 3:1',
-            209 : 'Acts 17:30',
-            210 : 'John 16:7',
-            211 : '1 Peter 3:18',
-            212 : 'Hebrews 10:25',
-            213 : 'John 2:2',
-            214 : 'Matthew 7:8',
-            215 : 'Matthew 5:13',
-            216 : 'James 4:7',
-            217 : 'John 10:11',
-            218 : 'John 4:8',
-            219 : '1 Peter 2:24',
-            220 : 'John 14:27',
-            221 : 'John 6:37',
-            222 : 'Acts 6:1',
-            223 : 'Romans 8:26',
-            224 : 'John 20:1',
-            225 : 'John 6:7',
-            226 : 'Luke 14:1',
-            227 : 'Romans 8:29',
-            228 : 'John 5:19',
-            229 : 'Jeremiah 17:9',
-            230 : '1 John 4:7',
-            231 : 'Exodus 1:5',
-            232 : '1 John 2:15',
-            233 : '2 Peter 1:20',
-            234 : 'Colossians 3:12',
-            235 : 'John 15:26',
-            236 : 'John 17:20',
-            237 : '1 John 3:1',
-            238 : 'Acts 10:34',
-            239 : 'Luke 4:16',
-            240 : 'Matthew 2:1',
-            241 : 'Titus 1:5',
-            242 : 'Acts 17:10',
-            243 : 'Luke 9:23',
-            244 : 'Galatians 3:26',
-            245 : '1 John 2:1',
-            246 : '1 Peter 5:8',
-            247 : '2 Corinthians 1:2',
-            248 : '1 John 5:7',
-            249 : 'Hebrews 4:15',
-            250 : 'Hebrews 1:3',
-            251 : 'Acts 1:1',
-            252 : 'Galatians 5:1',
-            253 : 'John 4:10',
-            254 : 'John 5:14',
-            255 : 'Luke 2:3',
-            256 : 'Isaiah 14:12',
-            257 : 'Hebrews 13:8',
-            258 : 'Galatians 3:4',
-            259 : 'Colossians 3:16',
-            260 : 'John 7:37',
-            261 : 'Joshua 24:15',
-            262 : 'Matthew 5:16',
-            263 : 'Romans 8:14',
-            264 : '2 Chronicles 1:2',
-            265 : 'Luke 11:1',
-            266 : 'Luke 10:38',
-            267 : 'Romans 8:31',
-            268 : 'John 13:1',
-            269 : 'John 1:4',
-            270 : 'Philippians 2:12',
-            271 : 'Luke 14:25',
-            272 : 'John 14:23',
-            273 : 'John 16:8',
-            274 : '2 Peter 1:21',
-            275 : '1 John 1:8',
-            276 : 'Luke 18:1',
-            277 : 'James 2:3',
-            278 : 'Philippians 1:6',
-            279 : 'Matthew 7:15',
-            280 : 'John 2:19',
-            281 : 'Exodus 20:8',
-            282 : 'Hebrews 10:24',
-            283 : 'Philippians 2:1',
-            284 : 'John 14:2',
-            285 : 'Galatians 6:7',
-            286 : 'Romans 6:4',
-            287 : 'Matthew 5:7',
-            288 : 'Galatians 5:19',
-            289 : 'John 2:18',
-            290 : '1 Peter 1:3',
-            291 : 'Romans 8:38',
-            292 : '1 Corinthians 13:4',
-            293 : 'John 6:35',
-            294 : 'Acts 9:1',
-            295 : 'Jude 1:2',
-            296 : 'Ephesians 1:4',
-            297 : 'John 21:15',
-            298 : 'John 5:13',
-            299 : '2 Corinthians 6:14',
-            300 : 'Matthew 6:25',
-            301 : 'Romans 1:6',
-            302 : 'Isaiah 53:4',
-            303 : '1 Chronicles 1:2',
-            304 : 'Ephesians 1:22',
-            305 : 'Matthew 1:21',
-            306 : '1 John 1:1',
-            307 : 'Ephesians 3:20',
-            308 : 'Galatians 4:4',
-            309 : 'Exodus 20:1',
-            310 : 'Hebrews 12:2',
-            311 : 'John 4:4',
-            312 : 'John 16:17',
-            313 : 'John 5:11',
-            314 : 'Luke 4:1',
-            315 : 'Acts 2:22',
-            316 : 'Luke 1:1',
-            317 : 'Romans 8:18',
-            318 : 'Acts 17:26',
-            319 : 'John 20:21',
-            320 : 'Matthew 5:1',
-            321 : 'Matthew 5:3',
-            322 : 'Matthew 1:3',
-            323 : 'Colossians 1:13',
-            324 : 'Luke 10:1',
-            325 : 'Luke 7:36',
-            326 : 'Luke 1:7',
-            327 : 'Isaiah 6:1',
-            328 : 'Revelation 20:11',
-            329 : 'Romans 1:26',
-            330 : 'Mark 1:15',
-            331 : 'Leviticus 20:13',
-            332 : 'Ephesians 5:21',
-            333 : '1 Corinthians 6:19',
-            334 : 'John 4:16',
-            335 : 'Luke 19:10',
-            336 : 'Matthew 28:20',
-            337 : 'Luke 24:1',
-            338 : 'Hebrews 4:14',
-            339 : '2 Chronicles 7:14',
-            340 : '1 John 3:2',
-            341 : '1 Corinthians 15:1',
-            342 : 'John 14:12',
-            343 : 'Mark 1:14',
-            344 : '2 Timothy 3:1',
-            345 : 'John 15:16',
-            346 : 'Exodus 20:3',
-            347 : 'Acts 2:37',
-            348 : 'Luke 23:34',
-            349 : 'Matthew 7:12',
-            350 : 'Matthew 6:24',
-            351 : 'Matthew 6:1',
-            352 : 'Mark 1:1',
-            353 : 'Jeremiah 31:31',
-            354 : 'James 5:6',
-            355 : 'Philippians 4:19',
-            356 : 'Matthew 18:20',
-            357 : 'Daniel 9:24',
-            358 : 'James 4:6',
-            359 : 'Mark 16:17',
-            360 : 'Revelation 19:11',
-            361 : 'Psalms 19:1',
-            362 : 'John 1:6',
-            363 : '1 Corinthians 10:13',
-            364 : 'Luke 6:27',
-            365 : 'Matthew 24:14',
-            366 : 'Matthew 4:4',
-        },
-        dailyVerse: 'John 3:16',
-        today: new Date()
-    }
-},
-components: {
-},
-methods: {
-    daysIntoYear(date){
-    return (Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) - Date.UTC(date.getFullYear(), 0, 0)) / 24 / 60 / 60 / 1000;
-    }, // This trick brought to you by StackOverflow
-    search() {
-        var dayOfYear = this.daysIntoYear(this.today);
-        this.dailyVerse = this.dailyVerses[dayOfYear];
-
-        const url = `/.netlify/functions/searchPassage?passage=${this.dailyVerse}`;
-        Vue.axios.get(
-            url).then(response => {
-            console.log(response)
-            this.data = response.data
-        }).catch(error => {
-            this.data = {
-                "passages": [
-                    "<h2 class=\"extra_text\">John 3:16 <small class=\"audio extra_text\">(<a class=\"mp3link\" href=\"https://audio.esv.org/hw/43003016-43003016.mp3\" title=\"John 3:16\" type=\"audio/mpeg\">Listen</a>)</small></h2>\n<h3 id=\"p43003016_01-1\">For God So Loved the World</h3>\n<p id=\"p43003016_07-1\"><b class=\"verse-num woc\" id=\"v43003016-1\">16&nbsp;</b><span class=\"woc\">“For God so loved the world,<sup class=\"footnote\"><a class=\"fn\" href=\"#f1-1\" id=\"fb1-1\" title=\"&lt;note class=&quot;alternative&quot;&gt;Or &lt;i&gt;&lt;span class=&quot;catch-word&quot;&gt;For&lt;/span&gt; this is how God loved the world&lt;/i&gt;&lt;/note&gt;\">1</a></sup> that he gave his only Son, that whoever believes in him should not perish but have eternal life.</span></p>\n<div class=\"footnotes extra_text\">\n<h3>Footnotes</h3>\n<p><span class=\"footnote\"><a href=\"#fb1-1\" id=\"f1-1\">[1]</a></span> <span class=\"footnote-ref\">3:16</span> <note class=\"alternative\">Or <i><span class=\"catch-word\">For</span> this is how God loved the world</i></note>\n</p>\n</div>\n<p>(<a href=\"http://www.esv.org\" class=\"copyright\">ESV</a>)</p>"
-                ]
-            }
-        })
-        }
+  export default {
+    head() {
+      return {
+        script: [{
+          src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'
+        }],
+      };
     },
-beforeMount() {
-    this.search();
-}
-}
+    data() {
+      return {
+        dailyVerse: 'John 3:17'
+      }
+    },
+    props: {
+      post: {
+        type: Object,
+        required: true
+      }
+    },
+    methods: {
+      dailyVerseValue: function (params) {
+        this.dailyVerse = params;
+      }
+    },
+    async asyncData({
+      $content
+    }) {
+      const posts = await $content("blog").fetch();
+
+      return {
+        posts,
+      };
+    },
+  };
 </script>
 
-<style>
+<style scoped>
+  .color-title {
+    color: rgb(130, 46, 46);
+    text-shadow: 4px 3px 2px rgba(11, 34, 8, 0.7);
+    font-size: 7em;
+  }
 
+  .hero-wrapper {
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    position: relative;
+    height: 50vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.51), hsla(0, 0%, 31.8%, 0.65)), url('/tater-farming.jpg');
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, .3));
+  }
+
+  .taters-wrapper {
+    white-space: nowrap;
+    padding: 0rem;
+    mix-blend-mode: color-dodge;
+  }
+
+  .taters-knockout {
+    font-family: calendas_plusregular;
+    font-weight: bold;
+    background-color: #535353;
+    color: #d94848;
+  }
+
+  .who-are-taters {
+    text-shadow: 2px 2px 0px rgba(56, 113, 187, 0.57);
+  }
+
+  .verse-wrapper {
+    font-size: 2rem;
+    font-family: Inter;
+    color: rgb(45, 58, 68);
+    padding: 3rem;
+  }
+
+  .votd-header {
+    color: rgb(45, 58, 68);
+    text-shadow: 2px 2px 0px rgba(187, 56, 56, 0.57);
+    border-bottom: solid .25rem rgb(213, 140, 140);
+  }
+
+  .posts-header {
+    color: rgb(248, 252, 255);
+    font-family: calendas_plusregular;
+  }
+
+  .projects {
+    background-color: rgb(187, 56, 56)
+  }
+
+  .post-post-div {
+    background-color: #2b2b2b;
+  }
+
+  /*------------------*/
+  /*  SKEW CLOCKWISE  */
+  /*------------------*/
+
+  .section-container {
+    overflow: hidden;
+  }
+
+  .skews {
+    width: 100%;
+    position: relative;
+    background: #373737;
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .skews::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 130%;
+    height: 75%;
+    transform: rotate(-4deg);
+    transform-origin: 0 0;
+    background: #373737;
+    /*box-shadow: inset 0px 5px 10px rgba(0,0,0,0.3)*/
+  }
+
+  .custom-shape-divider-top-1613438750 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .shape-fill {
+    fill: #f9fafb;
+  }
 </style>
