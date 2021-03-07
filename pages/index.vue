@@ -19,58 +19,56 @@
         <svg viewBox="0 0 32 32" class="icon icon-chevron-bottom" aria-hidden="true">
           <path d="M16.003 18.626l7.081-7.081L25 13.46l-8.997 8.998-9.003-9 1.917-1.916z" /></svg>
       </section>
+      
+      
 
-      <section class="text-gray-700 body-font">
+      <section class="text-white body-font">
         <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 lg:py-24 md:flex-row">
           <div
             class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 lg:mr-20 md:items-start md:text-left md:mb-0 lg:text-center">
             <h1
-              class="mb-8 text-2xl font-bold tracking-tighter text-center text-black lg:text-left lg:text-2xl title-font">
-              A pretty long length display headline ready to convert visitors into users.
+              class="mb-8 text-2xl font-bold tracking-tighter text-center text-white lg:text-left lg:text-2xl title-font">
+              Homegrown websites, just for you.
             </h1>
-            <p class="mb-8 text-base leading-relaxed text-center text-gray-700 lg:text-left lg:text-1xl">
-              Deploy
-              your mvp in
-              minutes, not days. WT offers you a a wide selection swapable sections for your landing page.You
-              are going to have
-              fun building it, I did.
+            <p class="mb-8 text-base leading-relaxed text-center text-white lg:text-left lg:text-1xl">
+              Good Tater Web Management builds all websites in-house specific to your business needs. Beyond that, we manage getting your website known online through continuous Search Engine Optimizations to help your business rank higher on search engines. Beyond that, we also offer analytic reports to show you just how awesome your website is doing.
             </p>
-            <p class="flex items-center mb-2 text-gray-600"><span
+            <p class="flex items-center mb-2 text-white"><span
                 class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
                 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                   <path fill="none" d="M0 0h24v24H0z" />
                   <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" />
                 </svg>
               </span>
-              Ain't no sunshine when she's gone.
+              Custom Designs for your Business.
             </p>
-            <p class="flex items-center mb-2 text-gray-600">
+            <p class="flex items-center mb-2 text-white">
               <span class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
                 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                   <path fill="none" d="M0 0h24v24H0z" />
                   <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" />
                 </svg>
               </span>
-              Expensive feature.
+              Ongoing Content Creation and Management.
             </p>
-            <p class="flex items-center mb-6 text-gray-600">
+            <p class="flex items-center mb-6 text-white">
               <span class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
                 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                   <path fill="none" d="M0 0h24v24H0z" />
                   <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" />
                 </svg>
               </span>
-              Really good feauture.
+              Reporting, so you know how your website is doing.
             </p>
           </div>
           <div class="w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
             <img class="object-cover object-center rounded-lg " alt="hero"
-              src="https://dummyimage.com/720x600/F3F4F7/8693ac">
+              src="/two-taters-floating-on-an-endless-sea-of-darkness.jpg">
           </div>
         </div>
       </section>
 
-      <section class="text-gray-700 body-font">
+      <section class="text-white body-font">
         <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 lg:py-24 md:flex-row">
           <div class="w-5/6 mb-10 lg:max-w-lg lg:w-full md:w-1/2 md:mb-0">
             <img class="object-cover object-center rounded" alt="hero"
@@ -79,9 +77,9 @@
           <div
             class="flex flex-col items-center text-center lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 md:items-start md:text-left">
             <h1
-              class="mb-8 text-2xl font-bold tracking-tighter text-center text-black lg:text-left lg:text-2xl title-font">
+              class="mb-8 text-2xl font-bold tracking-tighter text-center text-white lg:text-left lg:text-2xl title-font">
               A pretty long length display headline ready to convert visitors into users.</h1>
-            <p class="mb-8 text-base leading-relaxed text-center text-gray-700 lg:text-left lg:text-1xl">Deploy
+            <p class="mb-8 text-base leading-relaxed text-center text-white lg:text-left lg:text-1xl">Deploy
               your mvp in
               minutes, not days. WT offers you a a wide selection swapable sections for your landing page.You
               are going to have
@@ -148,14 +146,14 @@
         </div>
       </section>
 
-      <section class="text-gray-700 body-font">
+      <section class="text-white body-font">
         <div class="container px-8 mx-auto py-36 lg:px-4">
           <div class="flex flex-wrap text-left">
             <div class="px-8 py-6 lg:w-1/3 md:w-full">
               <img class="object-cover object-center w-full h-40 mb-6 rounded"
                 src="https://dummyimage.com/720x400/F3F4F7/8693ac" alt="content">
               <div class="flex items-center justify-between ">
-                <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font"> Information 1
+                <h2 class="mb-3 text-lg font-semibold text-white lg:text-2xl title-font"> Information 1
                 </h2>
                 <span class="mb-1 text-xs font-medium tracking-widest text-blue-500 title-font">Your
                   tagline</span>
@@ -168,7 +166,7 @@
               <img class="object-cover object-center w-full h-40 mb-6 rounded"
                 src="https://dummyimage.com/720x400/F3F4F7/8693ac" alt="content">
               <div class="flex items-center justify-between ">
-                <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font"> Information 2
+                <h2 class="mb-3 text-lg font-semibold text-white lg:text-2xl title-font"> Information 2
                 </h2>
                 <span class="mb-1 text-xs font-medium tracking-widest text-blue-500 title-font">Your
                   tagline</span>
@@ -181,7 +179,7 @@
               <img class="object-cover object-center w-full h-40 mb-6 rounded"
                 src="https://dummyimage.com/720x400/F3F4F7/8693ac" alt="content">
               <div class="flex items-center justify-between ">
-                <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font"> Information 3
+                <h2 class="mb-3 text-lg font-semibold text-white lg:text-2xl title-font"> Information 3
                 </h2>
                 <span class="mb-1 text-xs font-medium tracking-widest text-blue-500 title-font">Your
                   tagline</span>
@@ -194,34 +192,33 @@
         </div>
       </section>
 
-      <section class="text-gray-700 body-font">
+      <section class="text-white body-font">
         <div class="container px-8 pt-24 pb-24 mx-auto lg:px-4">
           <div class="flex flex-col w-full p-8 mx-auto mt-10 border rounded-lg lg:w-2/6 md:w-1/2 md:ml-auto md:mt-0">
             <div class="relative ">
-              <label for="email" class="text-sm leading-7 text-gray-600">Email</label>
+              <label for="email" class="text-sm leading-7 text-white">Email</label>
               <input type="email" id="v" name="email" placeholder="email"
-                class="w-full px-4 py-2 mb-4 text-black transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg mr-4text-base focus:border-gray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                class="w-full px-4 py-2 mb-4 text-white transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg mr-4text-base focus:border-gray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
             </div>
             <div class="relative ">
-              <label for="name" class="text-sm leading-7 text-gray-600">Name</label>
+              <label for="name" class="text-sm leading-7 text-white">Name</label>
               <input type="name" id="name" name="name" placeholder="name"
-                class="w-full px-4 py-2 mb-4 text-black transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg mr-4text-base focus:border-gray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                class="w-full px-4 py-2 mb-4 text-white transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg mr-4text-base focus:border-gray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
             </div>
             <div class="relative mb-4 ">
               <label class="block ">
-                <label for="email" class="text-sm leading-7 text-gray-600">Choose</label>
+                <label for="email" class="text-sm leading-7 text-white">Choose</label>
                 <select
                   class="block w-full px-4 py-2 bg-gray-100 border-transparent rounded-lg focus:border-gray-500 focus:bg-white focus:ring-0">
-                  <option>Corporate event</option>
-                  <option>Wedding</option>
-                  <option>Birthday</option>
-                  <option>Other</option>
+                  <option>You</option>
+                  <option>Need</option>
+                  <option>Me</option>
                 </select>
               </label>
             </div>
             <div class="relative ">
               <textarea type="message" id="message" name="message" placeholder="message"
-                class="w-full px-4 py-2 mb-4 text-black transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg mr-4text-base focus:border-gray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"></textarea>
+                class="w-full px-4 py-2 mb-4 text-white transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg mr-4text-base focus:border-gray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"></textarea>
             </div>
             <button
               class="px-8 py-2 font-semibold text-white transition duration-500 ease-in-out transform bg-black rounded-lg hover:bg-gray-800 hover:to-black focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Button</button>
@@ -229,7 +226,22 @@
         </div>
       </section>
 
-      <section class="w-full text-gray-700 body-font post-post-div relative">
+      <section class="flex flex-col w-full justify-center items-center pt-32 lg:pt-16">
+        <div
+          class="flex flex-col relative items-center text-center justify-center w-full">
+          <div class="taters-wrapper w-screen relative">
+            <h1
+              class="taters-knockout font-archia text-7vw lg:text-4vw text-cyber-red tracking-pretty-wide lg:tracking-super-wide">
+              {{this.dailyVerse}}</h1>
+          </div>
+        </div>
+        <div class="verse-wrapper">
+          <DailyVerse @dailyVerse="dailyVerseValue" />
+        </div>
+      </section>
+
+
+      <section class="w-full text-white body-font post-post-div relative">
         <div class="container mx-auto lg:px-4 lg:pb-16">
           <div class="container mx-auto pt-36 lg:px-4">
             <div class="flex flex-col w-full mb-12 text-center">
@@ -253,48 +265,48 @@
       </section>
     </div>
 
-    <footer class="mt-6 text-gray-700 bg-white border-t body-font">
+    <footer class="mt-6 text-white bg-white border-t body-font">
       <div
         class="container flex flex-col flex-wrap p-5 py-10 mx-auto lg:px-20 md:items-center lg:items-start md:flex-row md:flex-no-wrap ">
         <div class="flex flex-wrap flex-grow mx-auto mt-10 -mb-10 text-left md:mt-0 ">
           <div class="w-full lg:w-1/3 md:w-full">
-            <h1 class="mb-8 text-2xl font-bold text-center text-black lg:text-left lg:text-2xl title-font">
-              A pretty long lenght display headline ready to convert visitors into users.</h1>
+            <h1 class="mb-8 text-2xl font-bold text-center text-white lg:text-left lg:text-2xl title-font">
+              Thanks for looking at this mess.</h1>
           </div>
           <div class="w-full text-right lg:w-1/3 md:w-1/2 ">
-            <h1 class="mb-3 text-sm font-semibold tracking-widest text-black uppercase title-font">
+            <h1 class="mb-3 text-sm font-semibold tracking-widest text-white uppercase title-font">
               Company
             </h1>
             <nav class="mb-10 list-none">
               <li>
-                <a class="text-sm text-gray-600 hover:text-gray-800">Home</a>
+                <a class="text-sm text-white hover:text-gray-800">Home</a>
               </li>
               <li>
-                <a class="text-sm text-gray-600 hover:text-gray-800">About</a>
+                <a class="text-sm text-white hover:text-gray-800">About</a>
               </li>
               <li>
-                <a class="text-sm text-gray-600 hover:text-gray-800">Carriers</a>
+                <a class="text-sm text-white hover:text-gray-800">Carriers</a>
               </li>
               <li>
-                <a class="text-sm text-gray-600 hover:text-gray-800">Pricing</a>
+                <a class="text-sm text-white hover:text-gray-800">Pricing</a>
               </li>
             </nav>
           </div>
           <div class="w-full text-right lg:w-1/3 md:w-1/2">
-            <h1 class="mb-3 text-sm font-semibold tracking-widest text-black uppercase title-font">Legal
+            <h1 class="mb-3 text-sm font-semibold tracking-widest text-white uppercase title-font">Legal
             </h1>
             <nav class="mb-10 list-none">
               <li>
-                <a class="text-sm text-gray-600 hover:text-gray-800">Privacy Policy</a>
+                <a class="text-sm text-white hover:text-gray-800">Privacy Policy</a>
               </li>
               <li>
-                <a class="text-sm text-gray-600 hover:text-gray-800">Terms Of Service</a>
+                <a class="text-sm text-white hover:text-gray-800">Terms Of Service</a>
               </li>
               <li>
-                <a class="text-sm text-gray-600 hover:text-gray-800">Trademark Policy</a>
+                <a class="text-sm text-white hover:text-gray-800">Trademark Policy</a>
               </li>
               <li>
-                <a class="text-sm text-gray-600 hover:text-gray-800">Inactivity Policy</a>
+                <a class="text-sm text-white hover:text-gray-800">Inactivity Policy</a>
               </li>
             </nav>
           </div>
@@ -303,14 +315,10 @@
       <div class="bg-black">
         <div class="container flex flex-col flex-wrap px-5 py-6 mx-auto lg:px-20 sm:flex-row">
           <span class="inline-flex justify-center mt-2 sm:mt-0 sm:justify-start">
-            <a class="ml-4 text-white hover:text-blue-500">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
-                viewBox="0 0 24 24">
-                <path
-                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                </path>
-              </svg>
-            </a>
+            <p>Scripture quotations are from the ESV® Bible (The Holy Bible, English Standard Version®), copyright ©
+              2001 by Crossway, a publishing ministry of Good News Publishers. Used by permission. All rights reserved.
+              You may not copy or download more than 500 consecutive verses of the ESV Bible or more than one half of
+              any book of the ESV Bible.</p>
           </span>
         </div>
       </div>
@@ -371,11 +379,12 @@
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)), url('/stewed-herbs.jpg');
     display: flex;
   }
+  
+
 
   .taters-wrapper {
     white-space: nowrap;
     padding: 0rem;
-    mix-blend-mode: color-dodge;
   }
 
   .taters-knockout {
@@ -392,7 +401,7 @@
   .verse-wrapper {
     font-size: 2rem;
     font-family: Inter;
-    color: rgb(45, 58, 68);
+    color: rgb(255, 255, 255);
     padding: 3rem;
   }
 

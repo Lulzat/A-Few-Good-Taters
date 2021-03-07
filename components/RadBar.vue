@@ -41,7 +41,7 @@
             </path>
           </svg>
         </span>
-        <span><a href="/#projects">Projects</a></span></span>
+        <span><a href="/ESVBible">ESV Bible</a></span></span>
       <span @click="isOpen = false" class="flex items-center p-4 hover:bg-tater-blue hover:text-white "><span
           class="mr-2">
           <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor"

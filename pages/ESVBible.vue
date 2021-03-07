@@ -14,34 +14,6 @@
           <DailyVerse @dailyVerse="dailyVerseValue" />
         </div>
       </section>
-
-      <section class="w-full text-gray-700 body-font post-post-div relative">
-        <div class="custom-shape-divider-top-1613438750">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <div class="container mx-auto lg:px-4 lg:pb-16">
-          <div class="container mx-auto pt-36 lg:px-4">
-            <div class="flex flex-col w-full mb-12 text-center">
-              <div
-                class="inline-flex items-center justify-center flex-shrink-0 mt-16 w-20 h-20 mx-auto mb-5 text-blue-800 bg-gray-200 rounded-full">
-                <Taters />
-              </div>
-               <h1 class="text-center text-4xl font-archia tracking-tighter text-tater-red posts-header">
-                Recent Posts:
-              </h1>
-              <div class="px-8 py-6 w-auto">
-                <ul>
-                  <li v-for="post of posts" :key="post.slug">
-                    <PostPreview :post="post" />
-                  </li>
-                </ul>
-        </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
     <footer class="mt-16 text-gray-700 bg-white border-t body-font">
       <div class="border-t border-gray-200">
